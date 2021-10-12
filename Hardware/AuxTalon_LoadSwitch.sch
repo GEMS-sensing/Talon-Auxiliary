@@ -373,7 +373,10 @@
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="900-2059570671CT-ND" constant="no"/>
 <attribute name="DISP" value="Remote" constant="no"/>
+<attribute name="MF" value="Molex" constant="no"/>
+<attribute name="MPN" value="2059570671" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -388,7 +391,10 @@
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="WM22471CT-ND" constant="no"/>
 <attribute name="DISP" value="Logger" constant="no"/>
+<attribute name="MF" value="Molex" constant="no"/>
+<attribute name="MPN" value="5055670681" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -760,8 +766,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tps61070.pdf</description>
 <smd name="4" x="0.95" y="1.25" dx="0.6" dy="0.8" layer="1"/>
 <smd name="5" x="0" y="1.25" dx="0.6" dy="0.8" layer="1"/>
 <smd name="6" x="-0.95" y="1.25" dx="0.6" dy="0.8" layer="1"/>
-<text x="-1.27" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-1.905" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 <rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.825" layer="51" rot="R180"/>
 <rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.825" layer="51" rot="R180"/>
 <rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.825" layer="51" rot="R180"/>
@@ -1008,6 +1013,37 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <wire x1="0.5" y1="-0.3" x2="0.5" y2="0.3" width="0.127" layer="21"/>
 <wire x1="0.5" y1="0.3" x2="-0.5" y2="0.3" width="0.127" layer="21"/>
 <text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="7103K2CWA">
+<description>&lt;b&gt;C&amp;K 7103K2CWA, Right Angle, PC Pin, Locking Lever Switch&lt;/b&gt;&lt;br&gt;&lt;a href = "https://www.ckswitches.com/media/1394/7000toggle.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="3" x="-4.7" y="12.7" drill="1.85"/>
+<pad name="2" x="0" y="12.7" drill="1.85"/>
+<pad name="1" x="4.7" y="12.7" drill="1.85"/>
+<pad name="BODY@1" x="-2.54" y="0" drill="1.85"/>
+<pad name="BODY@2" x="2.54" y="0" drill="1.85"/>
+<wire x1="-6.35" y1="8.39" x2="-6.35" y2="0.445" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="0.445" x2="-5.905" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="5.905" y1="0" x2="6.35" y2="0.445" width="0.127" layer="21" curve="90"/>
+<wire x1="6.35" y1="0.445" x2="6.35" y2="8.39" width="0.127" layer="21"/>
+<wire x1="6.35" y1="8.39" x2="5.85" y2="8.89" width="0.127" layer="21" curve="90"/>
+<wire x1="5.85" y1="8.89" x2="-5.85" y2="8.89" width="0.127" layer="21"/>
+<wire x1="-5.85" y1="8.89" x2="-6.35" y2="8.39" width="0.127" layer="21" curve="90"/>
+<wire x1="-5.905" y1="0" x2="-5.905" y2="-2" width="0.127" layer="21"/>
+<wire x1="-5.905" y1="-2" x2="-3.175" y2="-2" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-2" x2="5.905" y2="-2" width="0.127" layer="21"/>
+<wire x1="5.905" y1="-2" x2="5.905" y2="0" width="0.127" layer="21"/>
+<wire x1="5.905" y1="0" x2="-5.905" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-2" x2="-3.175" y2="-8.6" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-8.6" x2="3.175" y2="-8.6" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-8.6" x2="3.175" y2="-2" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-2" x2="-3.175" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2.72" y1="-8.6" x2="-2.72" y2="-23.98" width="0.127" layer="48" style="shortdash"/>
+<wire x1="-2.72" y1="-23.98" x2="-0.22" y2="-26.48" width="0.127" layer="48" style="shortdash" curve="90"/>
+<wire x1="-0.22" y1="-26.48" x2="0.22" y2="-26.48" width="0.127" layer="48" style="shortdash"/>
+<wire x1="0.22" y1="-26.48" x2="2.72" y2="-23.98" width="0.127" layer="48" style="shortdash" curve="90"/>
+<wire x1="2.72" y1="-23.98" x2="2.72" y2="-8.6" width="0.127" layer="48" style="shortdash"/>
+<wire x1="2.72" y1="-8.6" x2="-2.72" y2="-8.6" width="0.127" layer="48" style="shortdash"/>
+<text x="-6.985" y="3.81" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -1687,6 +1723,20 @@ Digikey:
 <attribute name="DIGIKEY" value="CAS120JCT-ND" constant="no"/>
 <attribute name="MF" value="Nidec Copal" constant="no"/>
 <attribute name="MPN" value="CAS-120TA" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="7103K2CWA" package="7103K2CWA">
+<connects>
+<connect gate="G$1" pin="O" pad="1"/>
+<connect gate="G$1" pin="P" pad="2"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="7103K2CWAV2BE-ND" constant="no"/>
+<attribute name="MF" value="C&amp;K" constant="no"/>
+<attribute name="MPN" value="7103K2CWAV2BE" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -8625,8 +8675,8 @@ http://www.bccomponents.com/</description>
 <wire x1="2.95" y1="-0.95" x2="2.95" y2="0.9" width="0.2032" layer="51" curve="34.818605"/>
 <smd name="+" x="2.7" y="0" dx="3.5" dy="1.6" layer="1"/>
 <smd name="-" x="-2.7" y="0" dx="3.5" dy="1.6" layer="1"/>
-<text x="-3.39" y="3.63" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.425" y="-4.885" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3.39" y="3.63" size="0.6096" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-3.425" y="-4.25" size="0.6096" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 </package>
 <package name="153CLV-0807">
 <description>&lt;b&gt;Aluminum electrolytic capacitors&lt;/b&gt;&lt;p&gt;
@@ -10075,15 +10125,40 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GRT155R61E224KE01D" constant="no"/>
 </technology>
+<technology name="100PF">
+<attribute name="DIGIKEY" value="311-1024-1-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0402JRNPO9BN101" constant="no"/>
+</technology>
+<technology name="10NF">
+<attribute name="DIGIKEY" value="490-4762-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="GCM155R71H103KA55D" constant="no"/>
+</technology>
 <technology name="12PF">
 <attribute name="DIGIKEY" value="445-5585-1-ND" constant="no"/>
 <attribute name="MF" value="TDK" constant="no"/>
 <attribute name="MPN" value="CGA2B2C0G1H120J050BA" constant="no"/>
 </technology>
+<technology name="1NF">
+<attribute name="DIGIKEY" value="490-3244-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="GRM1555C1H102JA01D" constant="no"/>
+</technology>
 <technology name="220PF">
 <attribute name="DIGIKEY" value="587-1215-1-ND" constant="no"/>
 <attribute name="MF" value="Taiyo Yuden" constant="no"/>
 <attribute name="MPN" value="UMK105CG221JV-F" constant="no"/>
+</technology>
+<technology name="39PF">
+<attribute name="DIGIKEY" value="399-1018-1-ND" constant="no"/>
+<attribute name="MF" value="Kemet" constant="no"/>
+<attribute name="MPN" value="C0402C390J5GAC7867" constant="no"/>
+</technology>
+<technology name="47PF">
+<attribute name="DIGIKEY" value="490-3254-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="GRM155R71E473KA88D" constant="no"/>
 </technology>
 <technology name="56PF">
 <attribute name="DIGIKEY" value="311-1022-1-ND" constant="no"/>
@@ -10986,6 +11061,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MPN" value="RC0402JR-070RL" constant="no"/>
 <attribute name="VALUE_PART" value="0" constant="no"/>
 </technology>
+<technology name="10">
+<attribute name="DIGIKEY" value="A129603CT-ND" constant="no"/>
+<attribute name="MF" value="TE" constant="no"/>
+<attribute name="MPN" value="CRGCQ0402F10R" constant="no"/>
+<attribute name="VALUE_PART" value="10" constant="no"/>
+</technology>
 <technology name="100">
 <attribute name="DIGIKEY" value="311-100LRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -11009,6 +11090,18 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402FR-07120KL" constant="no"/>
 <attribute name="VALUE_PART" value="120k" constant="no"/>
+</technology>
+<technology name="130K">
+<attribute name="DIGIKEY" value="YAG2969CT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07130KL" constant="no"/>
+<attribute name="VALUE_PART" value="130k" constant="no"/>
+</technology>
+<technology name="150K">
+<attribute name="DIGIKEY" value="311-150KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07150KL" constant="no"/>
+<attribute name="VALUE_PART" value="150k" constant="no"/>
 </technology>
 <technology name="180K">
 <attribute name="DIGIKEY" value="311-180KLRCT-ND" constant="no"/>
@@ -11034,6 +11127,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MPN" value="RC0402FR-072K2L" constant="no"/>
 <attribute name="VALUE_PART" value="2.2k" constant="no"/>
 </technology>
+<technology name="2.7K">
+<attribute name="DIGIKEY" value="CR0402-FX-2701GLFCT-ND" constant="no"/>
+<attribute name="MF" value="Bourns" constant="no"/>
+<attribute name="MPN" value="CR0402-FX-2701GLF" constant="no"/>
+<attribute name="VALUE_PART" value="2.7k" constant="no"/>
+</technology>
 <technology name="20">
 <attribute name="DIGIKEY" value="311-20LRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -11045,6 +11144,18 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402FR-07200KL" constant="no"/>
 <attribute name="VALUE_PART" value="200k" constant="no"/>
+</technology>
+<technology name="20K">
+<attribute name="DIGIKEY" value="CR0402-FX-2002GLFCT-ND" constant="no"/>
+<attribute name="MF" value="Bourns" constant="no"/>
+<attribute name="MPN" value="CR0402-FX-2002GLF" constant="no"/>
+<attribute name="VALUE_PART" value="20k" constant="no"/>
+</technology>
+<technology name="220">
+<attribute name="DIGIKEY" value="A129619CT-ND" constant="no"/>
+<attribute name="MF" value="TE" constant="no"/>
+<attribute name="MPN" value="CRGCQ0402F220R" constant="no"/>
+<attribute name="VALUE_PART" value="220" constant="no"/>
 </technology>
 <technology name="232">
 <attribute name="DIGIKEY" value="YAG3063CT-ND" constant="no"/>
@@ -11070,6 +11181,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MPN" value="RC0402FR-072KL" constant="no"/>
 <attribute name="VALUE_PART" value="2k" constant="no"/>
 </technology>
+<technology name="30K">
+<attribute name="DIGIKEY" value="YAG3474CT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="AC0402FR-0730KL" constant="no"/>
+<attribute name="VALUE_PART" value="30k" constant="no"/>
+</technology>
 <technology name="330">
 <attribute name="DIGIKEY" value="311-330LRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -11093,6 +11210,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402FR-07453RL" constant="no"/>
 <attribute name="VALUE_PART" value="453" constant="no"/>
+</technology>
+<technology name="470">
+<attribute name="DIGIKEY" value="311-470LRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07470RL" constant="no"/>
+<attribute name="VALUE_PART" value="470" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11168,6 +11291,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MPN" value="RMCF0603FT10M0" constant="no"/>
 <attribute name="VALUE_PART" value="10M" constant="no"/>
 </technology>
+<technology name="110K">
+<attribute name="DIGIKEY" value="CR0603-FX-1103ELFCT-ND" constant="no"/>
+<attribute name="MF" value="Bourns" constant="no"/>
+<attribute name="MPN" value="CR0603-FX-1103ELF" constant="no"/>
+<attribute name="VALUE_PART" value="110k" constant="no"/>
+</technology>
 <technology name="115K">
 <attribute name="DIGIKEY" value="311-115KHRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -11203,6 +11332,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07150RL" constant="no"/>
 <attribute name="VALUE_PART" value="150" constant="no"/>
+</technology>
+<technology name="150K">
+<attribute name="DIGIKEY" value="311-150KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07150KL" constant="no"/>
+<attribute name="VALUE_PART" value="150k" constant="no"/>
 </technology>
 <technology name="180K">
 <attribute name="DIGIKEY" value="P180KHCT-ND" constant="no"/>
@@ -11372,6 +11507,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MPN" value="RC0603JR-07470KL" constant="no"/>
 <attribute name="VALUE_PART" value="470k" constant="no"/>
 </technology>
+<technology name="49.9K">
+<attribute name="DIGIKEY" value="RMCF0603FG49K9CT-ND" constant="no"/>
+<attribute name="MF" value="Stackpole" constant="no"/>
+<attribute name="MPN" value="RMCF0603FG49K9" constant="no"/>
+<attribute name="VALUE_PART" value="49.9k" constant="no"/>
+</technology>
 <technology name="51.1K">
 <attribute name="DIGIKEY" value="118-CR0603-FX-5112ELFCT-ND" constant="no"/>
 <attribute name="MF" value="Bourns" constant="no"/>
@@ -11395,6 +11536,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07590KL" constant="no"/>
 <attribute name="VALUE_PART" value="590k" constant="no"/>
+</technology>
+<technology name="62K">
+<attribute name="DIGIKEY" value="RMCF0603FT62K0CT-ND" constant="no"/>
+<attribute name="MF" value="Stackpole" constant="no"/>
+<attribute name="MPN" value="RMCF0603FT62K0" constant="no"/>
+<attribute name="VALUE_PART" value="62k" constant="no"/>
 </technology>
 <technology name="750K">
 <attribute name="DIGIKEY" value="311-750KHRCT-ND" constant="no"/>
@@ -11498,6 +11645,11 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="DIGIKEY" value="P19308CT-ND" constant="no"/>
 <attribute name="MF" value="Panasonic" constant="no"/>
 <attribute name="MPN" value="ERJ-6DSFR10V" constant="no"/>
+</technology>
+<technology name="10">
+<attribute name="DIGIKEY" value="A129603CT-ND" constant="no"/>
+<attribute name="MF" value="TE" constant="no"/>
+<attribute name="MPN" value="CRGCQ0402F10R" constant="no"/>
 </technology>
 <technology name="100">
 <attribute name="DIGIKEY" value="311-100CRCT-ND" constant="no"/>
@@ -14345,8 +14497,8 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U11" library="bschulz" deviceset="MCP23018" device="QFN"/>
-<part name="R14" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
-<part name="R15" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
+<part name="R14" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="82K" value="82k"/>
+<part name="R15" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="62K" value="62k"/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U12" library="bschulz" deviceset="SN74HC590A" device="VQFN"/>
@@ -14382,19 +14534,43 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <part name="S2" library="bschulz" deviceset="SPDT" device="CAS-120A1"/>
 <part name="S3" library="bschulz" deviceset="SPDT" device="CAS-120A1"/>
 <part name="U25" library="bschulz" deviceset="MCP23018" device="QFN"/>
-<part name="R19" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
-<part name="R20" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
+<part name="R19" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="62K" value="62k"/>
+<part name="R20" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="82K" value="82k"/>
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U26" library="bschulz" deviceset="MCP23018" device="QFN"/>
-<part name="R21" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
-<part name="R22" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
+<part name="R21" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="10K" value="10k"/>
+<part name="R22" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="150K" value="150k"/>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C9" library="bschulz_passives" deviceset="CPOL-EU" device="153CLV-0605" value="68uF"/>
-<part name="C10" library="bschulz_passives" deviceset="CPOL-EU" device="153CLV-0605" value="68uF"/>
+<part name="C9" library="bschulz_passives" deviceset="CPOL-EU" device="153CLV-0605" value="68uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="+" pinorder="1"/>
+<pinmap gate="G$1" pin="-" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DIGIKEY" value="732-6423-1-ND"/>
+<attribute name="MF" value="Wurth"/>
+<attribute name="MPN" value="875105344008"/>
+</part>
+<part name="C10" library="bschulz_passives" deviceset="CPOL-EU" device="153CLV-0605" value="68uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="+" pinorder="1"/>
+<pinmap gate="G$1" pin="-" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DIGIKEY" value="732-6423-1-ND"/>
+<attribute name="MF" value="Wurth"/>
+<attribute name="MPN" value="875105344008"/>
+</part>
 <part name="U27" library="bschulz" deviceset="AP1603" device=""/>
-<part name="L1" library="bschulz" deviceset="INDUCTOR" device="_TPC_3.8X3.8" value="22uH"/>
+<part name="L1" library="bschulz" deviceset="INDUCTOR" device="_TPC_3.8X3.8" value="22uH">
+<attribute name="DIGIKEY" value="732-1012-1-ND"/>
+<attribute name="MF" value="Wurth"/>
+<attribute name="MPN" value="744031220"/>
+</part>
 <part name="GND46" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C11" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -14552,10 +14728,16 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <instance part="C9" gate="G$1" x="78.74" y="175.26" smashed="yes">
 <attribute name="NAME" x="79.883" y="175.7426" size="1.778" layer="95"/>
 <attribute name="VALUE" x="79.883" y="170.6626" size="1.778" layer="96"/>
+<attribute name="DIGIKEY" x="78.74" y="175.26" size="2.54" layer="96" align="center" display="off"/>
+<attribute name="MF" x="78.74" y="175.26" size="2.54" layer="96" align="center" display="off"/>
+<attribute name="MPN" x="78.74" y="175.26" size="2.54" layer="96" align="center" display="off"/>
 </instance>
 <instance part="C10" gate="G$1" x="149.86" y="177.8" smashed="yes">
 <attribute name="NAME" x="151.003" y="178.2826" size="1.778" layer="95"/>
 <attribute name="VALUE" x="151.003" y="173.2026" size="1.778" layer="96"/>
+<attribute name="DIGIKEY" x="149.86" y="177.8" size="2.54" layer="96" align="center" display="off"/>
+<attribute name="MPN" x="149.86" y="177.8" size="2.54" layer="96" align="center" display="off"/>
+<attribute name="MF" x="149.86" y="177.8" size="2.54" layer="96" align="center" display="off"/>
 </instance>
 <instance part="U27" gate="G$1" x="121.92" y="175.26" smashed="yes">
 <attribute name="NAME" x="121.92" y="166.116" size="1.778" layer="95" align="center"/>
@@ -14563,6 +14745,9 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <instance part="L1" gate="G$1" x="93.98" y="180.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="99.06" y="179.07" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="99.06" y="184.15" size="1.778" layer="96" rot="R180"/>
+<attribute name="DIGIKEY" x="93.98" y="180.34" size="2.54" layer="96" rot="R90" align="center" display="off"/>
+<attribute name="MF" x="93.98" y="180.34" size="2.54" layer="96" rot="R90" align="center" display="off"/>
+<attribute name="MPN" x="93.98" y="180.34" size="2.54" layer="96" rot="R90" align="center" display="off"/>
 </instance>
 <instance part="GND46" gate="1" x="78.74" y="165.1" smashed="yes">
 <attribute name="VALUE" x="76.2" y="162.56" size="1.778" layer="96"/>
@@ -15368,9 +15553,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 </sheet>
 <sheet>
 <plain>
-<text x="17.78" y="154.94" size="1.778" layer="91" align="center">BETA</text>
+<text x="17.78" y="160.02" size="1.778" layer="91" align="center">BETA</text>
 <text x="17.78" y="101.6" size="1.778" layer="91" align="center">GAMMA</text>
-<text x="17.78" y="208.28" size="1.778" layer="91" align="center">ALPHA</text>
+<text x="17.78" y="218.44" size="1.778" layer="91" align="center">ALPHA</text>
+<text x="22.86" y="208.28" size="2.54" layer="91" align="center">ADR: 0x20</text>
+<text x="22.86" y="149.86" size="2.54" layer="91" align="center">ADR: 0x23</text>
+<text x="22.86" y="91.44" size="2.54" layer="91" align="center">ADR: 0x24</text>
 </plain>
 <instances>
 <instance part="U9" gate="G$1" x="25.4" y="71.12" smashed="yes">
@@ -15501,39 +15689,39 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <instance part="GND41" gate="1" x="111.76" y="88.9" smashed="yes">
 <attribute name="VALUE" x="109.22" y="86.36" size="1.778" layer="96"/>
 </instance>
-<instance part="U25" gate="G$1" x="22.86" y="172.72" smashed="yes">
-<attribute name="NAME" x="22.86" y="148.336" size="1.778" layer="95" ratio="15" align="center"/>
+<instance part="U25" gate="G$1" x="22.86" y="177.8" smashed="yes">
+<attribute name="NAME" x="22.86" y="153.416" size="1.778" layer="95" ratio="15" align="center"/>
 </instance>
-<instance part="R19" gate="G$1" x="-12.7" y="177.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="-14.1986" y="173.99" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-9.398" y="173.99" size="1.778" layer="96" rot="R90"/>
+<instance part="R19" gate="G$1" x="-12.7" y="182.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="-14.1986" y="179.07" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-9.398" y="179.07" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R20" gate="G$1" x="-12.7" y="187.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="-14.1986" y="184.15" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-9.398" y="184.15" size="1.778" layer="96" rot="R90"/>
+<instance part="R20" gate="G$1" x="-12.7" y="193.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="-14.1986" y="189.23" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-9.398" y="189.23" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND42" gate="1" x="-12.7" y="167.64" smashed="yes">
-<attribute name="VALUE" x="-15.24" y="165.1" size="1.778" layer="96"/>
+<instance part="GND42" gate="1" x="-12.7" y="172.72" smashed="yes">
+<attribute name="VALUE" x="-15.24" y="170.18" size="1.778" layer="96"/>
 </instance>
-<instance part="GND43" gate="1" x="5.08" y="187.96" smashed="yes">
-<attribute name="VALUE" x="2.54" y="185.42" size="1.778" layer="96"/>
+<instance part="GND43" gate="1" x="5.08" y="193.04" smashed="yes">
+<attribute name="VALUE" x="2.54" y="190.5" size="1.778" layer="96"/>
 </instance>
-<instance part="U26" gate="G$1" x="22.86" y="226.06" smashed="yes">
-<attribute name="NAME" x="22.86" y="201.676" size="1.778" layer="95" ratio="15" align="center"/>
+<instance part="U26" gate="G$1" x="22.86" y="236.22" smashed="yes">
+<attribute name="NAME" x="22.86" y="211.836" size="1.778" layer="95" ratio="15" align="center"/>
 </instance>
-<instance part="R21" gate="G$1" x="-12.7" y="231.14" smashed="yes" rot="R90">
-<attribute name="NAME" x="-14.1986" y="227.33" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-9.398" y="227.33" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R22" gate="G$1" x="-12.7" y="241.3" smashed="yes" rot="R90">
+<instance part="R21" gate="G$1" x="-12.7" y="241.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="-14.1986" y="237.49" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-9.398" y="237.49" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND44" gate="1" x="-12.7" y="220.98" smashed="yes">
-<attribute name="VALUE" x="-15.24" y="218.44" size="1.778" layer="96"/>
+<instance part="R22" gate="G$1" x="-12.7" y="251.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="-14.1986" y="247.65" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-9.398" y="247.65" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND45" gate="1" x="5.08" y="241.3" smashed="yes">
-<attribute name="VALUE" x="2.54" y="238.76" size="1.778" layer="96"/>
+<instance part="GND44" gate="1" x="-12.7" y="231.14" smashed="yes">
+<attribute name="VALUE" x="-15.24" y="228.6" size="1.778" layer="96"/>
+</instance>
+<instance part="GND45" gate="1" x="5.08" y="251.46" smashed="yes">
+<attribute name="VALUE" x="2.54" y="248.92" size="1.778" layer="96"/>
 </instance>
 <instance part="C14" gate="G$1" x="175.26" y="109.22" smashed="yes">
 <attribute name="NAME" x="176.784" y="109.601" size="1.778" layer="95"/>
@@ -15671,33 +15859,33 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 </segment>
 <segment>
 <pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="-12.7" y1="193.04" x2="-15.24" y2="193.04" width="0.1524" layer="91"/>
-<label x="-15.24" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-12.7" y1="198.12" x2="-15.24" y2="198.12" width="0.1524" layer="91"/>
+<label x="-15.24" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="7.62" y1="170.18" x2="5.08" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="175.26" x2="5.08" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="U25" gate="G$1" pin="!RESET"/>
-<label x="5.08" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="5.08" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U25" gate="G$1" pin="VDD"/>
-<wire x1="7.62" y1="193.04" x2="2.54" y2="193.04" width="0.1524" layer="91"/>
-<label x="2.54" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="7.62" y1="198.12" x2="2.54" y2="198.12" width="0.1524" layer="91"/>
+<label x="2.54" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="-12.7" y1="246.38" x2="-15.24" y2="246.38" width="0.1524" layer="91"/>
-<label x="-15.24" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-12.7" y1="256.54" x2="-15.24" y2="256.54" width="0.1524" layer="91"/>
+<label x="-15.24" y="256.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="7.62" y1="223.52" x2="5.08" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="233.68" x2="5.08" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="U26" gate="G$1" pin="!RESET"/>
-<label x="5.08" y="223.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="5.08" y="233.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U26" gate="G$1" pin="VDD"/>
-<wire x1="7.62" y1="246.38" x2="2.54" y2="246.38" width="0.1524" layer="91"/>
-<label x="2.54" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="7.62" y1="256.54" x2="2.54" y2="256.54" width="0.1524" layer="91"/>
+<label x="2.54" y="256.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="1"/>
@@ -15851,24 +16039,24 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="172.72" x2="-12.7" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="177.8" x2="-12.7" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="GND42" gate="1" pin="GND"/>
 </segment>
 <segment>
 </segment>
 <segment>
 <pinref part="U25" gate="G$1" pin="VSS"/>
-<wire x1="7.62" y1="190.5" x2="5.08" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="195.58" x2="5.08" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="GND43" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="226.06" x2="-12.7" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="236.22" x2="-12.7" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="GND44" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U26" gate="G$1" pin="VSS"/>
-<wire x1="7.62" y1="243.84" x2="5.08" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="254" x2="5.08" y2="254" width="0.1524" layer="91"/>
 <pinref part="GND45" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -15900,8 +16088,8 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 </segment>
 <segment>
 <pinref part="U25" gate="G$1" pin="GPA3"/>
-<wire x1="38.1" y1="160.02" x2="40.64" y2="160.02" width="0.1524" layer="91"/>
-<label x="40.64" y="160.02" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="165.1" x2="40.64" y2="165.1" width="0.1524" layer="91"/>
+<label x="40.64" y="165.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LOAD" class="0">
@@ -15937,8 +16125,8 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 </segment>
 <segment>
 <pinref part="U25" gate="G$1" pin="GPA7"/>
-<wire x1="38.1" y1="170.18" x2="40.64" y2="170.18" width="0.1524" layer="91"/>
-<label x="40.64" y="170.18" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="175.26" x2="40.64" y2="175.26" width="0.1524" layer="91"/>
+<label x="40.64" y="175.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="OUT1" class="0">
@@ -15954,8 +16142,8 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 </segment>
 <segment>
 <pinref part="U25" gate="G$1" pin="GPA0"/>
-<wire x1="38.1" y1="152.4" x2="40.64" y2="152.4" width="0.1524" layer="91"/>
-<label x="40.64" y="152.4" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="157.48" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
+<label x="40.64" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!RST" class="0">
@@ -15991,8 +16179,8 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 </segment>
 <segment>
 <pinref part="U25" gate="G$1" pin="GPA6"/>
-<wire x1="38.1" y1="167.64" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
-<label x="40.64" y="167.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="172.72" x2="40.64" y2="172.72" width="0.1524" layer="91"/>
+<label x="40.64" y="172.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -16014,8 +16202,8 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 </segment>
 <segment>
 <pinref part="U25" gate="G$1" pin="GPB0"/>
-<wire x1="38.1" y1="175.26" x2="40.64" y2="175.26" width="0.1524" layer="91"/>
-<label x="40.64" y="175.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="180.34" x2="40.64" y2="180.34" width="0.1524" layer="91"/>
+<label x="40.64" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="C0" class="0">
@@ -16377,14 +16565,14 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <label x="5.08" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="7.62" y1="175.26" x2="5.08" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="180.34" x2="5.08" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="U25" gate="G$1" pin="SCL"/>
-<label x="5.08" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="5.08" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="7.62" y1="228.6" x2="5.08" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="238.76" x2="5.08" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="U26" gate="G$1" pin="SCL"/>
-<label x="5.08" y="228.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="5.08" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -16394,14 +16582,14 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <label x="5.08" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="7.62" y1="177.8" x2="5.08" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="182.88" x2="5.08" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="U25" gate="G$1" pin="SDA"/>
-<label x="5.08" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="5.08" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="7.62" y1="231.14" x2="5.08" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="241.3" x2="5.08" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="U26" gate="G$1" pin="SDA"/>
-<label x="5.08" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="5.08" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -16448,8 +16636,8 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 </segment>
 <segment>
 <pinref part="U25" gate="G$1" pin="GPA4"/>
-<wire x1="38.1" y1="162.56" x2="40.64" y2="162.56" width="0.1524" layer="91"/>
-<label x="40.64" y="162.56" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="167.64" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
+<label x="40.64" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="OUT2" class="0">
@@ -16465,8 +16653,8 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 </segment>
 <segment>
 <pinref part="U25" gate="G$1" pin="GPA1"/>
-<wire x1="38.1" y1="154.94" x2="40.64" y2="154.94" width="0.1524" layer="91"/>
-<label x="40.64" y="154.94" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="160.02" x2="40.64" y2="160.02" width="0.1524" layer="91"/>
+<label x="40.64" y="160.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="COUNT_EN3" class="0">
@@ -16482,8 +16670,8 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 </segment>
 <segment>
 <pinref part="U25" gate="G$1" pin="GPA5"/>
-<wire x1="38.1" y1="165.1" x2="40.64" y2="165.1" width="0.1524" layer="91"/>
-<label x="40.64" y="165.1" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="170.18" x2="40.64" y2="170.18" width="0.1524" layer="91"/>
+<label x="40.64" y="170.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="OUT3" class="0">
@@ -16499,8 +16687,8 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 </segment>
 <segment>
 <pinref part="U25" gate="G$1" pin="GPA2"/>
-<wire x1="38.1" y1="157.48" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
-<label x="40.64" y="157.48" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="162.56" x2="40.64" y2="162.56" width="0.1524" layer="91"/>
+<label x="40.64" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="OD1" class="0">
@@ -16610,32 +16798,32 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 </net>
 <net name="N$16" class="0">
 <segment>
-<wire x1="7.62" y1="182.88" x2="-12.7" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="187.96" x2="-12.7" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 <pinref part="R20" gate="G$1" pin="1"/>
-<junction x="-12.7" y="182.88"/>
+<junction x="-12.7" y="187.96"/>
 <pinref part="U25" gate="G$1" pin="ADDR"/>
 </segment>
 </net>
 <net name="GPIOA" class="0">
 <segment>
 <pinref part="U25" gate="G$1" pin="INTA"/>
-<wire x1="7.62" y1="165.1" x2="5.08" y2="165.1" width="0.1524" layer="91"/>
-<label x="5.08" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="7.62" y1="170.18" x2="5.08" y2="170.18" width="0.1524" layer="91"/>
+<label x="5.08" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIOB" class="0">
 <segment>
 <pinref part="U25" gate="G$1" pin="INTB"/>
-<wire x1="7.62" y1="162.56" x2="5.08" y2="162.56" width="0.1524" layer="91"/>
-<label x="5.08" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="7.62" y1="167.64" x2="5.08" y2="167.64" width="0.1524" layer="91"/>
+<label x="5.08" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!OVF2" class="0">
 <segment>
 <pinref part="U25" gate="G$1" pin="GPB1"/>
-<wire x1="38.1" y1="177.8" x2="40.64" y2="177.8" width="0.1524" layer="91"/>
-<label x="40.64" y="177.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="182.88" x2="40.64" y2="182.88" width="0.1524" layer="91"/>
+<label x="40.64" y="182.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U13" gate="G$1" pin="!RCO"/>
@@ -16646,8 +16834,8 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <net name="!OVF3" class="0">
 <segment>
 <pinref part="U25" gate="G$1" pin="GPB2"/>
-<wire x1="38.1" y1="180.34" x2="40.64" y2="180.34" width="0.1524" layer="91"/>
-<label x="40.64" y="180.34" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="185.42" x2="40.64" y2="185.42" width="0.1524" layer="91"/>
+<label x="40.64" y="185.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U15" gate="G$1" pin="!RCO"/>
@@ -16658,90 +16846,90 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <net name="N$26" class="0">
 <segment>
 <pinref part="U25" gate="G$1" pin="GPB3"/>
-<wire x1="38.1" y1="182.88" x2="40.64" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="187.96" x2="40.64" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MUX_SEL2" class="0">
 <segment>
 <pinref part="U25" gate="G$1" pin="GPB5"/>
-<wire x1="38.1" y1="187.96" x2="40.64" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="193.04" x2="40.64" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="U25" gate="G$1" pin="GPB6"/>
-<wire x1="38.1" y1="190.5" x2="40.64" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="195.58" x2="40.64" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
 <pinref part="U25" gate="G$1" pin="GPB7"/>
-<wire x1="38.1" y1="193.04" x2="40.64" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="198.12" x2="40.64" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<wire x1="7.62" y1="236.22" x2="-12.7" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="246.38" x2="-12.7" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
 <pinref part="R22" gate="G$1" pin="1"/>
-<junction x="-12.7" y="236.22"/>
+<junction x="-12.7" y="246.38"/>
 <pinref part="U26" gate="G$1" pin="ADDR"/>
 </segment>
 </net>
 <net name="!PORT1_FAULT" class="0">
 <segment>
 <pinref part="U26" gate="G$1" pin="GPA0"/>
-<wire x1="38.1" y1="205.74" x2="40.64" y2="205.74" width="0.1524" layer="91"/>
-<label x="40.64" y="205.74" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="215.9" x2="40.64" y2="215.9" width="0.1524" layer="91"/>
+<label x="40.64" y="215.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!PORT3_FAULT" class="0">
 <segment>
 <pinref part="U26" gate="G$1" pin="GPA4"/>
-<wire x1="38.1" y1="215.9" x2="40.64" y2="215.9" width="0.1524" layer="91"/>
-<label x="40.64" y="215.9" size="0.8128" layer="95" xref="yes"/>
+<wire x1="38.1" y1="226.06" x2="40.64" y2="226.06" width="0.1524" layer="91"/>
+<label x="40.64" y="226.06" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ADC_INT" class="0">
 <segment>
 <pinref part="U26" gate="G$1" pin="GPA6"/>
-<wire x1="38.1" y1="220.98" x2="40.64" y2="220.98" width="0.1524" layer="91"/>
-<label x="40.64" y="220.98" size="0.8128" layer="95" xref="yes"/>
+<wire x1="38.1" y1="231.14" x2="40.64" y2="231.14" width="0.1524" layer="91"/>
+<label x="40.64" y="231.14" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="5V_EN" class="0">
 <segment>
 <pinref part="U26" gate="G$1" pin="GPA7"/>
-<wire x1="38.1" y1="223.52" x2="40.64" y2="223.52" width="0.1524" layer="91"/>
-<label x="40.64" y="223.52" size="0.8128" layer="95" xref="yes"/>
+<wire x1="38.1" y1="233.68" x2="40.64" y2="233.68" width="0.1524" layer="91"/>
+<label x="40.64" y="233.68" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!PORT2_FAULT" class="0">
 <segment>
 <pinref part="U26" gate="G$1" pin="GPA2"/>
-<wire x1="38.1" y1="210.82" x2="40.64" y2="210.82" width="0.1524" layer="91"/>
-<label x="40.64" y="210.82" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="220.98" x2="40.64" y2="220.98" width="0.1524" layer="91"/>
+<label x="40.64" y="220.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PORT1_EN" class="0">
 <segment>
 <pinref part="U26" gate="G$1" pin="GPA1"/>
-<wire x1="38.1" y1="208.28" x2="40.64" y2="208.28" width="0.1524" layer="91"/>
-<label x="40.64" y="208.28" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="218.44" x2="40.64" y2="218.44" width="0.1524" layer="91"/>
+<label x="40.64" y="218.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PORT2_EN" class="0">
 <segment>
 <pinref part="U26" gate="G$1" pin="GPA3"/>
-<wire x1="38.1" y1="213.36" x2="40.64" y2="213.36" width="0.1524" layer="91"/>
-<label x="40.64" y="213.36" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="223.52" x2="40.64" y2="223.52" width="0.1524" layer="91"/>
+<label x="40.64" y="223.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PORT3_EN" class="0">
 <segment>
 <pinref part="U26" gate="G$1" pin="GPA5"/>
-<wire x1="38.1" y1="218.44" x2="40.64" y2="218.44" width="0.1524" layer="91"/>
-<label x="40.64" y="218.44" size="0.8128" layer="95" xref="yes"/>
+<wire x1="38.1" y1="228.6" x2="40.64" y2="228.6" width="0.1524" layer="91"/>
+<label x="40.64" y="228.6" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

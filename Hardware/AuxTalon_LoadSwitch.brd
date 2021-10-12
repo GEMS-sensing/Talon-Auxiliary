@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -31,12 +31,12 @@
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -47,19 +47,19 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -78,7 +78,7 @@
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
-<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="yes"/>
 <layer number="101" name="Patch_Top" color="7" fill="1" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
 <layer number="103" name="fp3" color="7" fill="1" visible="no" active="yes"/>
@@ -169,6 +169,19 @@
 <wire x1="70" y1="32.5" x2="67.5" y2="35" width="0" layer="20" curve="90"/>
 <wire x1="67.5" y1="35" x2="2.5" y2="35" width="0" layer="20"/>
 <wire x1="2.5" y1="35" x2="0" y2="32.5" width="0" layer="20" curve="90"/>
+<text x="58.547" y="31.369" size="1.27" layer="51" font="vector" ratio="15" align="center-left">Talon - Aux
+v0.0 - LS
+Bobby Schulz</text>
+<text x="16.891" y="23.241" size="1.778" layer="51" font="vector" ratio="15" align="center-left">GEMS Sensing</text>
+<text x="11.049" y="18.796" size="1.016" layer="51" font="vector" ratio="15" align="center">Port1</text>
+<text x="35.052" y="20.828" size="1.016" layer="51" font="vector" ratio="15" align="center">Port2</text>
+<text x="59.055" y="18.796" size="1.016" layer="51" font="vector" ratio="15" align="center">Port3</text>
+<text x="65.254" y="18.873" size="1.016" layer="51" font="vector" ratio="15" align="center">5V</text>
+<text x="65.381" y="12" size="1.016" layer="51" font="vector" ratio="15" align="center">3V3</text>
+<text x="41.402" y="20.955" size="1.016" layer="51" font="vector" ratio="15" align="center">5V</text>
+<text x="41.402" y="14.097" size="1.016" layer="51" font="vector" ratio="15" align="center">3V3</text>
+<text x="17.399" y="18.923" size="1.016" layer="51" font="vector" ratio="15" align="center">5V</text>
+<text x="17.526" y="12.065" size="1.016" layer="51" font="vector" ratio="15" align="center">3V3</text>
 </plain>
 <libraries>
 <library name="GEMS_Plugs">
@@ -416,8 +429,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tps61070.pdf</description>
 <smd name="4" x="0.95" y="1.25" dx="0.6" dy="0.8" layer="1"/>
 <smd name="5" x="0" y="1.25" dx="0.6" dy="0.8" layer="1"/>
 <smd name="6" x="-0.95" y="1.25" dx="0.6" dy="0.8" layer="1"/>
-<text x="-1.27" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-1.905" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 <rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.825" layer="51" rot="R180"/>
 <rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.825" layer="51" rot="R180"/>
 <rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.825" layer="51" rot="R180"/>
@@ -533,8 +545,8 @@ http://www.bccomponents.com/</description>
 <wire x1="2.95" y1="-0.95" x2="2.95" y2="0.9" width="0.2032" layer="51" curve="34.818605"/>
 <smd name="+" x="2.7" y="0" dx="3.5" dy="1.6" layer="1"/>
 <smd name="-" x="-2.7" y="0" dx="3.5" dy="1.6" layer="1"/>
-<text x="-3.39" y="3.63" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.425" y="-4.885" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3.39" y="3.63" size="0.6096" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-3.425" y="-4.25" size="0.6096" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -726,24 +738,27 @@ Please make sure your boards conform to these design rules.
 <attribute name="DISP" value="Remote" x="11" y="15.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="TE" x="11" y="15.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="T4141012051-000" x="11" y="15.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="14.81" y="15.5" size="1.27" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="11.5" y="20.81" size="1.27" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
 <element name="J4" library="GEMS_Plugs" package="1X06_MICROLOCKPLUS" value="CONN_TALON_REMOTE" x="35" y="29.21" smashed="yes">
+<attribute name="DIGIKEY" value="900-2059570671CT-ND" x="35" y="29.21" size="1.778" layer="27" display="off"/>
 <attribute name="DISP" value="Remote" x="35" y="29.21" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="35" y="35.052" size="0.8128" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="MF" value="Molex" x="35" y="29.21" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="2059570671" x="35" y="29.21" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="30.682" y="33.02" size="0.8128" layer="25" font="vector" ratio="15" align="center"/>
 </element>
 <element name="U1" library="bschulz" package="VSSOP_10" value="ADS1115" x="16.51" y="32.004" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="296-38849-1-ND" x="16.51" y="32.004" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="TI" x="16.51" y="32.004" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="ADS1115IDGSR" x="16.51" y="32.004" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="16.51" y="34.163" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="16.51" y="29.972" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="16.51" y="29.845" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 <element name="C1" library="bschulz_passives" package="C0402" value="0.1uF" x="16.51" y="34.163" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="490-4759-1-ND" x="16.51" y="34.163" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Murata" x="16.51" y="34.163" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="GCM155R71C104KA55D" x="16.51" y="34.163" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="16.51" y="32.766" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="14.986" y="34.163" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="16.51" y="35.56" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="J2" library="GEMS_Plugs" package="1X05_M12_TE_T41410" value="CONN_AUX_M12_REMOTE" x="35" y="17.5" smashed="yes" rot="R90">
@@ -751,20 +766,20 @@ Please make sure your boards conform to these design rules.
 <attribute name="DISP" value="Remote" x="35" y="17.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="TE" x="35" y="17.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="T4141012051-000" x="35" y="17.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="38.81" y="17.5" size="1.27" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="35.078" y="22.681" size="1.27" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
 <element name="J3" library="GEMS_Plugs" package="1X05_M12_TE_T41410" value="CONN_AUX_M12_REMOTE" x="59" y="15.5" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="A126851-ND" x="59" y="15.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISP" value="Remote" x="59" y="15.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="TE" x="59" y="15.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="T4141012051-000" x="59" y="15.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="62.81" y="15.5" size="1.27" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="58.5" y="20.81" size="1.27" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
 <element name="R1" library="bschulz_passives" package="R0402" value="10k" x="25.273" y="32.766" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="311-10.0KLRCT-ND" x="25.273" y="32.766" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Yageo" x="25.273" y="32.766" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="RC0402FR-0710KL" x="25.273" y="32.766" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="23.876" y="32.766" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="25.273" y="34.29" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="26.67" y="32.766" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE_PART" value="10k" x="25.273" y="32.766" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -772,7 +787,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="DIGIKEY" value="311-10.0KLRCT-ND" x="24.13" y="32.766" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Yageo" x="24.13" y="32.766" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="RC0402FR-0710KL" x="24.13" y="32.766" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="22.733" y="32.766" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="24.13" y="34.29" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="25.527" y="32.766" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE_PART" value="10k" x="24.13" y="32.766" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -780,7 +795,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="DIGIKEY" value="311-100KLRCT-ND" x="21.59" y="26.67" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Yageo" x="21.59" y="26.67" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0402FR-07100KL" x="21.59" y="26.67" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="21.59" y="28.067" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="20.066" y="26.67" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="21.59" y="25.273" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE_PART" value="100k" x="21.59" y="26.67" size="1.778" layer="27" display="off"/>
 </element>
@@ -788,7 +803,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="DIGIKEY" value="311-100KLRCT-ND" x="21.59" y="29.21" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Yageo" x="21.59" y="29.21" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0402FR-07100KL" x="21.59" y="29.21" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="21.59" y="30.607" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="20.066" y="29.21" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="21.59" y="27.813" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE_PART" value="100k" x="21.59" y="29.21" size="1.778" layer="27" display="off"/>
 </element>
@@ -796,7 +811,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="DIGIKEY" value="311-100KLRCT-ND" x="21.59" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Yageo" x="21.59" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0402FR-07100KL" x="21.59" y="27.94" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="21.59" y="29.337" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="20.066" y="27.94" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="21.59" y="26.543" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE_PART" value="100k" x="21.59" y="27.94" size="1.778" layer="27" display="off"/>
 </element>
@@ -804,21 +819,21 @@ Please make sure your boards conform to these design rules.
 <attribute name="DIGIKEY" value="399-7415-1-ND" x="13.97" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Kemet" x="13.97" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C0805C475K4RACTU" x="13.97" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="15.367" y="27.813" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="13.97" y="25.654" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="12.573" y="27.813" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="C3" library="bschulz_passives" package="C0805" value="4.7uF" x="16.129" y="27.813" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="399-7415-1-ND" x="16.129" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Kemet" x="16.129" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C0805C475K4RACTU" x="16.129" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="17.526" y="27.813" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="16.129" y="25.654" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="14.732" y="27.813" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="C4" library="bschulz_passives" package="C0805" value="4.7uF" x="18.288" y="27.813" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="399-7415-1-ND" x="18.288" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Kemet" x="18.288" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C0805C475K4RACTU" x="18.288" y="27.813" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="19.685" y="27.813" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="18.288" y="25.654" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="16.891" y="27.813" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="U2" library="bschulz" package="UQFN-8_1.4X1.2" value="FXMAR2102UMLP" x="22.086" y="32.389" smashed="yes" rot="R90">
@@ -826,86 +841,86 @@ Please make sure your boards conform to these design rules.
 <attribute name="DISP" value="FXMAR2102" x="22.086" y="32.389" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="OnSemi" x="22.086" y="32.389" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="FXMAR2102UMX-F106" x="22.086" y="32.389" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="23.61" y="32.389" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="20.816" y="32.389" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="C5" library="bschulz_passives" package="C0402" value="0.1uF" x="22.098" y="30.734" smashed="yes">
 <attribute name="DIGIKEY" value="490-4759-1-ND" x="18.288" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Murata" x="18.288" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="GCM155R71C104KA55D" x="18.288" y="35.814" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="22.098" y="32.131" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="20.574" y="30.734" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="22.098" y="29.337" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 <element name="C6" library="bschulz_passives" package="C0402" value="0.1uF" x="21.971" y="33.782" smashed="yes">
 <attribute name="DIGIKEY" value="490-4759-1-ND" x="18.161" y="38.862" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Murata" x="18.161" y="38.862" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="GCM155R71C104KA55D" x="18.161" y="38.862" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="21.971" y="35.179" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="20.447" y="33.782" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="21.971" y="32.385" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 <element name="U9" library="bschulz" package="VQFN-16" value="" x="9" y="8.89" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="1727-6923-1-ND" x="9" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Nexperia" x="9" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="74HC590BQ,115" x="9" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="11.159" y="8.89" size="0.6096" layer="21" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="11.286" y="8.89" size="0.6096" layer="21" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="U10" library="bschulz" package="VQFN-16" value="" x="9" y="3.81" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="1727-6923-1-ND" x="9" y="3.81" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Nexperia" x="9" y="3.81" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="74HC590BQ,115" x="9" y="3.81" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="11.159" y="3.81" size="0.6096" layer="21" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="11.286" y="3.81" size="0.6096" layer="21" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="U11" library="bschulz" package="QFN24" value="MCP23018QFN" x="25.654" y="6.985" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="MCP23018T-E/MJCT-ND" x="25.654" y="6.985" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="TI" x="25.654" y="6.985" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="MCP23018T-E/MJ" x="25.654" y="6.985" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="22.733" y="6.985" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="25.781" y="9.906" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R14" library="bschulz_passives" package="R0603" value="" x="30.48" y="7.62" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="" x="30.48" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="Yageo" x="30.48" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="30.48" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="30.48" y="6.223" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<element name="R14" library="bschulz_passives" package="R0603" value="82k" x="30.48" y="7.62" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="CR0603-FX-8202ELFCT-ND" x="30.48" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="Bourns" x="30.48" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="CR0603-FX-8202ELF" x="30.48" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="29.845" y="6.604" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="30.48" y="9.017" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE_PART" value="" x="30.48" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE_PART" value="82k" x="30.48" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R15" library="bschulz_passives" package="R0603" value="" x="30.48" y="9.652" smashed="yes">
-<attribute name="DIGIKEY" value="" x="30.48" y="9.652" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Yageo" x="30.48" y="9.652" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="30.48" y="9.652" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="30.48" y="11.049" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<element name="R15" library="bschulz_passives" package="R0603" value="62k" x="30.48" y="9.652" smashed="yes">
+<attribute name="DIGIKEY" value="RMCF0603FT62K0CT-ND" x="30.48" y="9.652" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Stackpole" x="30.48" y="9.652" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RMCF0603FT62K0" x="30.48" y="9.652" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="29.845" y="10.668" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="30.48" y="8.255" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE_PART" value="" x="30.48" y="9.652" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE_PART" value="62k" x="30.48" y="9.652" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U12" library="bschulz" package="VQFN-16" value="" x="35" y="8.89" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="1727-6923-1-ND" x="35" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Nexperia" x="35" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="74HC590BQ,115" x="35" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="37.159" y="8.89" size="0.6096" layer="21" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="37.286" y="8.89" size="0.6096" layer="21" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="U13" library="bschulz" package="VQFN-16" value="" x="35" y="3.81" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="1727-6923-1-ND" x="35" y="3.81" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Nexperia" x="35" y="3.81" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="74HC590BQ,115" x="35" y="3.81" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="37.159" y="3.81" size="0.6096" layer="21" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="37.286" y="3.81" size="0.6096" layer="21" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="U14" library="bschulz" package="VQFN-16" value="" x="61" y="8.89" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="1727-6923-1-ND" x="61" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Nexperia" x="61" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="74HC590BQ,115" x="61" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="63.159" y="8.89" size="0.6096" layer="21" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="60.96" y="11.597" size="0.6096" layer="21" font="vector" ratio="15" align="center"/>
 </element>
 <element name="U15" library="bschulz" package="VQFN-16" value="" x="61" y="3.81" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="1727-6923-1-ND" x="61" y="3.81" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Nexperia" x="61" y="3.81" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="74HC590BQ,115" x="61" y="3.81" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="63.159" y="3.81" size="0.6096" layer="21" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="60.96" y="1.056" size="0.6096" layer="21" font="vector" ratio="15" align="center"/>
 </element>
 <element name="U16" library="bschulz" package="SOT23-5" value="MAX9064" x="5.207" y="15.653" smashed="yes">
 <attribute name="DIGIKEY" value="MAX9064EUK+TCT-ND" x="5.207" y="15.653" size="1.778" layer="27" display="off"/>
 <attribute name="DISP" value="MAX9064" x="5.207" y="15.653" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Maxim" x="5.207" y="15.653" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MAX9064EUK+T" x="5.207" y="15.653" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="2.921" y="15.653" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="3.175" y="15.653" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="7.493" y="15.78" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="U17" library="bschulz" package="SOT23-5" value="MAX9064" x="5.207" y="19.59" smashed="yes">
@@ -913,14 +928,14 @@ Please make sure your boards conform to these design rules.
 <attribute name="DISP" value="MAX9064" x="5.207" y="19.59" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Maxim" x="5.207" y="19.59" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MAX9064EUK+T" x="5.207" y="19.59" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="2.921" y="19.59" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="7.366" y="19.59" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="7.493" y="19.717" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R16" library="bschulz_passives" package="R0402" value="100k" x="7.366" y="15.526" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="311-100KLRCT-ND" x="7.366" y="15.526" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Yageo" x="7.366" y="15.526" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="RC0402FR-07100KL" x="7.366" y="15.526" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="8.763" y="15.526" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="7.461" y="17.018" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="5.969" y="15.526" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE_PART" value="100k" x="7.366" y="15.526" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -929,7 +944,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="DISP" value="SN74AUP1T87" x="2.032" y="17.685" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="TI" x="2.032" y="17.685" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="SN74AUP1T87DCKR" x="2.032" y="17.685" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="2.032" y="16.161" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="2.032" y="19.209" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="2.032" y="19.209" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="U19" library="bschulz" package="SOT23-5" value="MAX9064" x="29.21" y="15.113" smashed="yes">
@@ -937,7 +952,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="DISP" value="MAX9064" x="29.21" y="21.463" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Maxim" x="29.21" y="21.463" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MAX9064EUK+T" x="29.21" y="21.463" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="26.924" y="15.113" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="27.178" y="15.113" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="31.496" y="15.24" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="U20" library="bschulz" package="SOT23-5" value="MAX9064" x="29.21" y="19.05" smashed="yes">
@@ -945,14 +960,14 @@ Please make sure your boards conform to these design rules.
 <attribute name="DISP" value="MAX9064" x="29.21" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Maxim" x="29.21" y="25.4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MAX9064EUK+T" x="29.21" y="25.4" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="26.924" y="19.05" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="31.242" y="19.05" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="31.496" y="19.177" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R17" library="bschulz_passives" package="R0402" value="100k" x="31.496" y="15.113" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="311-100KLRCT-ND" x="42.926" y="18.923" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Yageo" x="42.926" y="18.923" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="RC0402FR-07100KL" x="42.926" y="18.923" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="32.893" y="15.113" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="31.496" y="16.637" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="30.099" y="15.113" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE_PART" value="100k" x="42.926" y="18.923" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -961,7 +976,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="DISP" value="SN74AUP1T87" x="34.925" y="13.335" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="TI" x="34.925" y="13.335" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="SN74AUP1T87DCKR" x="34.925" y="13.335" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="26.035" y="15.621" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="26.035" y="18.669" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="26.035" y="18.669" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="U22" library="bschulz" package="SOT23-5" value="MAX9064" x="53.34" y="15.78" smashed="yes">
@@ -969,7 +984,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="DISP" value="MAX9064" x="53.34" y="22.13" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Maxim" x="53.34" y="22.13" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MAX9064EUK+T" x="53.34" y="22.13" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="51.054" y="15.78" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="51.308" y="15.653" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="55.626" y="15.907" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="U23" library="bschulz" package="SOT23-5" value="MAX9064" x="53.34" y="19.717" smashed="yes">
@@ -977,14 +992,14 @@ Please make sure your boards conform to these design rules.
 <attribute name="DISP" value="MAX9064" x="53.34" y="26.067" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Maxim" x="53.34" y="26.067" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MAX9064EUK+T" x="53.34" y="26.067" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="51.054" y="19.717" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="NAME" x="55.372" y="19.717" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="55.626" y="19.844" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R18" library="bschulz_passives" package="R0402" value="100k" x="55.626" y="14.764" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="311-100KLRCT-ND" x="67.056" y="18.574" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Yageo" x="67.056" y="18.574" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="RC0402FR-07100KL" x="67.056" y="18.574" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="57.023" y="14.764" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="55.848" y="16.256" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="54.229" y="14.764" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE_PART" value="100k" x="67.056" y="18.574" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -993,117 +1008,125 @@ Please make sure your boards conform to these design rules.
 <attribute name="DISP" value="SN74AUP1T87" x="59.055" y="13.621" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="TI" x="59.055" y="13.621" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="SN74AUP1T87DCKR" x="59.055" y="13.621" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="50.165" y="15.907" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="50.165" y="18.955" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="50.165" y="18.955" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="S1" library="bschulz" package="CAS-120A1" value="SPDTCAS-120A1" x="16.256" y="15.526" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="CAS120JCT-ND" x="16.256" y="15.526" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Nidec Copal" x="16.256" y="15.526" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="CAS-120TA" x="16.256" y="15.526" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="16.256" y="18.828" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="14.446" y="15.494" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="S2" library="bschulz" package="CAS-120A1" value="SPDTCAS-120A1" x="40.259" y="17.526" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="CAS120JCT-ND" x="40.259" y="17.526" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Nidec Copal" x="40.259" y="17.526" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="CAS-120TA" x="40.259" y="17.526" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="40.259" y="20.828" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="38.481" y="17.526" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="S3" library="bschulz" package="CAS-120A1" value="SPDTCAS-120A1" x="64.135" y="15.399" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="CAS120JCT-ND" x="64.135" y="15.399" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Nidec Copal" x="64.135" y="15.399" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="CAS-120TA" x="64.135" y="15.399" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="64.135" y="18.701" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="62.452" y="15.367" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="U25" library="bschulz" package="QFN24" value="MCP23018QFN" x="45.72" y="7.62" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="MCP23018T-E/MJCT-ND" x="45.72" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="TI" x="45.72" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="MCP23018T-E/MJ" x="45.72" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="45.72" y="4.699" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="48.641" y="7.62" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="R19" library="bschulz_passives" package="R0603" value="" x="44.831" y="11.938" smashed="yes" rot="R270">
-<attribute name="DIGIKEY" value="" x="49.911" y="17.018" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="Yageo" x="49.911" y="17.018" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="49.911" y="17.018" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="46.228" y="11.938" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<element name="R19" library="bschulz_passives" package="R0603" value="62k" x="44.831" y="11.938" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="RMCF0603FT62K0CT-ND" x="49.911" y="17.018" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Stackpole" x="49.911" y="17.018" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="RMCF0603FT62K0" x="49.911" y="17.018" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="45.847" y="11.938" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="43.434" y="11.938" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
-<attribute name="VALUE_PART" value="" x="49.911" y="17.018" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE_PART" value="62k" x="49.911" y="17.018" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R20" library="bschulz_passives" package="R0603" value="" x="42.799" y="11.938" smashed="yes" rot="R90">
-<attribute name="DIGIKEY" value="" x="33.909" y="3.048" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="Yageo" x="33.909" y="3.048" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="33.909" y="3.048" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="41.402" y="11.938" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+<element name="R20" library="bschulz_passives" package="R0603" value="82k" x="42.799" y="11.938" smashed="yes" rot="R90">
+<attribute name="DIGIKEY" value="CR0603-FX-8202ELFCT-ND" x="33.909" y="3.048" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Bourns" x="33.909" y="3.048" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="CR0603-FX-8202ELF" x="33.909" y="3.048" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="41.783" y="11.938" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="44.196" y="11.938" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="VALUE_PART" value="" x="33.909" y="3.048" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE_PART" value="82k" x="33.909" y="3.048" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U26" library="bschulz" package="QFN24" value="MCP23018QFN" x="7.493" y="28.829" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="MCP23018T-E/MJCT-ND" x="15.113" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="TI" x="15.113" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="MCP23018T-E/MJ" x="15.113" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="10.414" y="28.829" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="7.493" y="25.908" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 </element>
-<element name="R21" library="bschulz_passives" package="R0603" value="" x="7.112" y="32.512" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="" x="17.272" y="21.082" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R21" library="bschulz_passives" package="R0603" value="10k" x="7.112" y="32.512" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="311-10.0KHRCT-ND" x="17.272" y="21.082" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Yageo" x="17.272" y="21.082" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="17.272" y="21.082" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="7.112" y="31.115" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="MPN" value="RC0603FR-0710KL" x="17.272" y="21.082" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="7.112" y="33.528" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="7.112" y="33.909" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE_PART" value="" x="17.272" y="21.082" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE_PART" value="10k" x="17.272" y="21.082" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R22" library="bschulz_passives" package="R0603" value="" x="4.064" y="32.512" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="" x="18.034" y="17.272" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R22" library="bschulz_passives" package="R0603" value="150k" x="4.064" y="32.512" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="311-150KHRCT-ND" x="18.034" y="17.272" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Yageo" x="18.034" y="17.272" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="18.034" y="17.272" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="4.064" y="31.115" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="MPN" value="RC0603FR-07150KL" x="18.034" y="17.272" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="4.064" y="33.528" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="4.064" y="33.909" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
-<attribute name="VALUE_PART" value="" x="18.034" y="17.272" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE_PART" value="150k" x="18.034" y="17.272" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C9" library="bschulz_passives" package="153CLV-0605" value="68uF" x="44.323" y="29.21" smashed="yes" rot="R270">
-<attribute name="NAME" x="42.873" y="32.6" size="1.27" layer="25" rot="R270"/>
+<attribute name="DIGIKEY" value="732-6423-1-ND" x="44.323" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Wurth" x="44.323" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="875105344008" x="44.323" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="45.632" y="32.84" size="0.6096" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="44.323" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="39.438" y="32.635" size="1.27" layer="27" rot="R270"/>
+<attribute name="VALUE" x="40.073" y="32.635" size="0.6096" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="C10" library="bschulz_passives" package="153CLV-0605" value="68uF" x="54.737" y="29.21" smashed="yes" rot="R270">
-<attribute name="NAME" x="58.367" y="32.6" size="1.27" layer="25" rot="R270"/>
+<attribute name="DIGIKEY" value="732-6423-1-ND" x="54.737" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Wurth" x="54.737" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="875105344008" x="54.737" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="56.046" y="32.84" size="0.6096" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="54.737" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="49.852" y="32.635" size="1.27" layer="27" rot="R270"/>
+<attribute name="VALUE" x="50.487" y="32.635" size="0.6096" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="U27" library="bschulz" package="TSOT23-6_DDC" value="AP1603" x="49.53" y="29.21" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="AP1603WG-7DICT-ND" x="49.53" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Diodes" x="49.53" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="AP1603WG-7" x="49.53" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="50.8" y="27.305" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="50.8" y="32.385" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="49.53" y="27.051" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 </element>
 <element name="L1" library="bschulz" package="WE-TPC(3.8X3.8)" value="22uH" x="47.498" y="23.368" smashed="yes">
+<attribute name="DIGIKEY" value="732-1012-1-ND" x="47.498" y="23.368" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Wurth" x="47.498" y="23.368" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="744031220" x="47.498" y="23.368" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="47.498" y="20.574" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 </element>
 <element name="C11" library="bschulz_passives" package="C0402" value="0.1uF" x="49.53" y="32.131" smashed="yes">
 <attribute name="DIGIKEY" value="490-4759-1-ND" x="49.53" y="32.131" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Murata" x="49.53" y="32.131" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="GCM155R71C104KA55D" x="49.53" y="32.131" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="49.53" y="33.528" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="49.53" y="33.02" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="49.53" y="30.734" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 <element name="C14" library="bschulz_passives" package="C0402" value="0.1uF" x="5.207" y="13.113" smashed="yes">
 <attribute name="DIGIKEY" value="490-4759-1-ND" x="5.207" y="13.113" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Murata" x="5.207" y="13.113" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="GCM155R71C104KA55D" x="5.207" y="13.113" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="5.207" y="14.129" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="5.207" y="12.033" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="5.207" y="12.097" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 <element name="C15" library="bschulz_passives" package="C0402" value="0.1uF" x="29.21" y="12.573" smashed="yes">
 <attribute name="DIGIKEY" value="490-4759-1-ND" x="30.48" y="12.573" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Murata" x="30.48" y="12.573" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="GCM155R71C104KA55D" x="30.48" y="12.573" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="29.21" y="13.589" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="29.21" y="11.684" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="29.21" y="11.557" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 <element name="C16" library="bschulz_passives" package="C0402" value="0.1uF" x="53.34" y="13.24" smashed="yes">
 <attribute name="DIGIKEY" value="490-4759-1-ND" x="54.61" y="13.24" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Murata" x="54.61" y="13.24" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="GCM155R71C104KA55D" x="54.61" y="13.24" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="53.34" y="14.256" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="53.34" y="12.287" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="53.34" y="12.224" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 <element name="U3" library="bschulz" package="DCK_R-PDSO-G5" value="TPS22944" x="12.7" y="20.86" smashed="yes" rot="R270">
@@ -1118,14 +1141,14 @@ Please make sure your boards conform to these design rules.
 <attribute name="DIGIKEY" value="490-6473-1-ND" x="15.24" y="20.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Murata" x="15.24" y="20.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="GRM21BR61C106KE15K" x="15.24" y="20.86" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="16.637" y="20.86" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="15.208" y="22.987" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="13.843" y="20.86" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="C13" library="bschulz_passives" package="C0402" value="0.1uF" x="10.541" y="20.86" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="490-4759-1-ND" x="10.541" y="20.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Murata" x="10.541" y="20.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="GCM155R71C104KA55D" x="10.541" y="20.86" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="11.557" y="20.86" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="10.509" y="22.352" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="9.525" y="20.86" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="U4" library="bschulz" package="DCK_R-PDSO-G5" value="TPS22944" x="36.83" y="22.86" smashed="yes" rot="R270">
@@ -1140,14 +1163,14 @@ Please make sure your boards conform to these design rules.
 <attribute name="DIGIKEY" value="490-6473-1-ND" x="39.37" y="22.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Murata" x="39.37" y="22.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="GRM21BR61C106KE15K" x="39.37" y="22.86" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="40.767" y="22.86" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="39.37" y="24.892" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="37.973" y="22.86" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="C18" library="bschulz_passives" package="C0402" value="0.1uF" x="34.29" y="22.86" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="490-4759-1-ND" x="34.29" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Murata" x="34.29" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="GCM155R71C104KA55D" x="34.29" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="35.306" y="22.86" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="34.29" y="24.384" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="33.274" y="22.86" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="U5" library="bschulz" package="DCK_R-PDSO-G5" value="TPS22944" x="59.69" y="20.86" smashed="yes" rot="R270">
@@ -1162,51 +1185,51 @@ Please make sure your boards conform to these design rules.
 <attribute name="DIGIKEY" value="490-6473-1-ND" x="62.23" y="20.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Murata" x="62.23" y="20.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="GRM21BR61C106KE15K" x="62.23" y="20.86" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="63.627" y="20.86" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="62.198" y="22.987" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="60.833" y="20.86" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="C20" library="bschulz_passives" package="C0402" value="0.1uF" x="57.15" y="20.86" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="490-4759-1-ND" x="57.15" y="19.59" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Murata" x="57.15" y="19.59" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="GCM155R71C104KA55D" x="57.15" y="19.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="58.166" y="20.86" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="NAME" x="57.118" y="22.352" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="56.134" y="20.86" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="D1" library="bschulz" package="D0402" value="6V" x="11.049" y="14.002" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="D5V0L1B2LP4-7BDICT-ND" x="11.049" y="14.002" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Diodes Inc" x="11.049" y="14.002" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="D5V0L1B2LP4-7B" x="11.049" y="14.002" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="11.049" y="13.367" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="12.192" y="12.478" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="D2" library="bschulz" package="D0402" value="6V" x="11.049" y="13.113" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="D5V0L1B2LP4-7BDICT-ND" x="11.049" y="13.113" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Diodes Inc" x="11.049" y="13.113" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="D5V0L1B2LP4-7B" x="11.049" y="13.113" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="11.049" y="12.478" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="12.192" y="11.716" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="D3" library="bschulz" package="D0402" value="6V" x="35.052" y="14.605" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="D5V0L1B2LP4-7BDICT-ND" x="35.052" y="14.605" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Diodes Inc" x="35.052" y="14.605" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="D5V0L1B2LP4-7B" x="35.052" y="14.605" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="35.052" y="13.97" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="36.195" y="13.716" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="D4" library="bschulz" package="D0402" value="6V" x="35.052" y="15.621" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="D5V0L1B2LP4-7BDICT-ND" x="35.052" y="15.621" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Diodes Inc" x="35.052" y="15.621" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="D5V0L1B2LP4-7B" x="35.052" y="15.621" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="35.052" y="14.986" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="36.195" y="14.478" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="D5" library="bschulz" package="D0402" value="6V" x="59.055" y="13.875" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="D5V0L1B2LP4-7BDICT-ND" x="59.055" y="13.875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Diodes Inc" x="59.055" y="13.875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="D5V0L1B2LP4-7B" x="59.055" y="13.875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="59.055" y="13.24" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="57.785" y="12.351" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="D6" library="bschulz" package="D0402" value="6V" x="59.055" y="12.986" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="D5V0L1B2LP4-7BDICT-ND" x="59.055" y="12.986" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Diodes Inc" x="59.055" y="12.986" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="D5V0L1B2LP4-7B" x="59.055" y="12.986" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="59.055" y="12.351" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="57.785" y="11.589" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 </elements>
 <signals>
@@ -3459,4 +3482,10 @@ Please make sure your boards conform to these design rules.
 </mfgpreviewcolors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
