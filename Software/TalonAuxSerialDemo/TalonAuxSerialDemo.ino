@@ -24,6 +24,9 @@ const uint8_t OUT1 = 0;
 const uint8_t COUNT_EN1 = 3;
 const uint8_t OVF1 = 8;
 
+const uint8_t EN1 = 1;
+const uint8_t FAULT1 = 0;
+
 //Configured for pins on the Particle Boron
 //const uint8_t EXT_EN = 8;
 //const uint8_t SDA_CTRL = 2;
@@ -59,7 +62,7 @@ MCP23018 ioGamma(0x24);
 ///////////// ANALOG SENSING /////////////
 #include <Adafruit_ADS1015.h>
 
-Adafruit_ADS1115 ads; 
+Adafruit_ADS1115 ads(0x49); 
 
 const float VoltageDiv = 0.1875; //Program voltage divider [mV/bit]
 
@@ -74,6 +77,9 @@ void setup() {
 	delay(5000);
 
 	Wire.begin();
+	Serial.println(ioAlpha.begin());
+	Serial.println(ioBeta.begin());
+	Serial.println(ioGamma.begin());
  //DEBUG1!
 	SetDefaultPins(); //Set the default configuration for sensing 
 	delay(1000);
@@ -164,14 +170,30 @@ void loop() {
 void SetDefaultPins()
 {
 	for(int i = 0; i < 16; i++) { //Set all Gamma pins to input
-		ioGamma.pinMode(i, INPUT);
+		ioGamma.pinMode(i, INPUT_PULLUP);
 	} 
+
+	for(int i = 8; i < 16; i++) { //Set all Alpha pins to input
+		ioAlpha.pinMode(i, INPUT_PULLUP);
+		// ioAlpha.pinMode(i, OUTPUT);
+		// ioAlpha.digitalWrite(i, LOW);
+	} 
+
+	for(int i = 11; i < 16; i++) { //Set all Beta pins to input
+		ioBeta.pinMode(i, INPUT_PULLUP);
+		// ioBeta.pinMode(i, OUTPUT);
+		// ioBeta.digitalWrite(i, LOW);
+	} 
+
 
 	for(int i = 0; i < 3; i++) { //Set each group of IO pins seperately
 		ioBeta.pinMode(OUT1 + i, INPUT); //Set all outputs from counters as inputs to I/O expander
 		ioBeta.pinMode(COUNT_EN1 + i, OUTPUT); //Set enable control as output
 		ioBeta.pinMode(OVF1 + i, INPUT); //Set overflow pins as inputs
-		ioBeta.digitalWrite(COUNT_EN1 + 1, HIGH); //Default to enable all counters
+		ioBeta.digitalWrite(COUNT_EN1 + i, HIGH); //Default to enable all counters
+		ioAlpha.pinMode(FAULT1 + 2*i, INPUT_PULLUP);
+		ioAlpha.pinMode(EN1 + 2*i, OUTPUT);
+		ioAlpha.digitalWrite(EN1 + 2*i, HIGH);
 	}
 	ioBeta.pinMode(LOAD, OUTPUT);
 	ioBeta.pinMode(RST, OUTPUT);
@@ -180,7 +202,8 @@ void SetDefaultPins()
 
 	ioAlpha.pinMode(REG_EN, OUTPUT);
 	ioAlpha.digitalWrite(REG_EN, HIGH); //Default 5V to on
-	ioAlpha.pinMode(ADC_INT, INPUT_PULLUP); //Setup ADC int as an input pullup for the open drain
+	// ioAlpha.pinMode(ADC_INT, INPUT_PULLUP); //Setup ADC int as an input pullup for the open drain
+	ioAlpha.pinMode(ADC_INT, INPUT); //Setup ADC int as an input pullup for the open drain
 }
 
 void VoltageSense() //Voltage sense (AKA Sensor0)
@@ -211,9 +234,9 @@ uint16_t ReadCounters(uint8_t Port, bool NewRead) //Pass in which counter to rea
 		ioBeta.digitalWrite(LOAD, LOW);
 
 		for(int i = 0; i < 3; i++) { //Get count n
-			ioBeta.digitalWrite(COUNT_EN1 + i, HIGH); //Turn on outputs of counter n 
-			Count[i] = ioGamma.readWord(); //Grab bus
-			ioBeta.digitalWrite(COUNT_EN1 + i, LOW); //Turn off outputs of countern
+			ioBeta.digitalWrite(COUNT_EN1 + i, LOW); //Turn on outputs of counter n 
+			Count[i] = ioGamma.readBus(); //Grab bus
+			ioBeta.digitalWrite(COUNT_EN1 + i, HIGH); //Turn off outputs of countern
 		}
 
 		// ioBeta.digitalWrite(COUNT_EN1, HIGH); //Get count 1
