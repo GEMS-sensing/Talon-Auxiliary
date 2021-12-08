@@ -8228,7 +8228,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R10" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="68k"/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="L2" library="bschulz" deviceset="INDUCTOR" device="_MAPI_2.5X2"/>
+<part name="L2" library="bschulz" deviceset="INDUCTOR" device="_MAPI_2.5X2" value="4.7uH"/>
 <part name="R11" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="100K" value="100k"/>
 <part name="R12" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="750K" value="750k"/>
 <part name="GND54" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
