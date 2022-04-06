@@ -5739,6 +5739,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Kemet" constant="no"/>
 <attribute name="MPN" value="C0402C390J5GAC7867" constant="no"/>
 </technology>
+<technology name="47NF">
+<attribute name="DIGIKEY" value="490-3254-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="GRM155R71E473KA88D" constant="no"/>
+</technology>
 <technology name="47PF">
 <attribute name="DIGIKEY" value="490-3254-1-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
@@ -5832,9 +5837,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="CC0603KRX7R9BB102" constant="no"/>
 </technology>
 <technology name="1UF">
-<attribute name="DIGIKEY" value="587-1251-1-ND" constant="no"/>
+<attribute name="DIGIKEY" value="587-2984-1-ND" constant="no"/>
 <attribute name="MF" value="Yaiyo Yuden" constant="no"/>
-<attribute name="MPN" value="EMK107BJ105KA-T" constant="no"/>
+<attribute name="MPN" value="TMK107B7105KA-T" constant="no"/>
 </technology>
 <technology name="2.2NF">
 <attribute name="DIGIKEY" value="311-1081-1-ND" constant="no"/>
@@ -6669,11 +6674,23 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="RC0402FR-0710KL" constant="no"/>
 <attribute name="VALUE_PART" value="10k" constant="no"/>
 </technology>
+<technology name="11K">
+<attribute name="DIGIKEY" value="311-11.0KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-0711KL" constant="no"/>
+<attribute name="VALUE_PART" value="11k" constant="no"/>
+</technology>
 <technology name="120K">
 <attribute name="DIGIKEY" value="311-120KLRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402FR-07120KL" constant="no"/>
 <attribute name="VALUE_PART" value="120k" constant="no"/>
+</technology>
+<technology name="13.3K">
+<attribute name="DIGIKEY" value="YAG2974CT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-0713K3L" constant="no"/>
+<attribute name="VALUE_PART" value="13.3k" constant="no"/>
 </technology>
 <technology name="130K">
 <attribute name="DIGIKEY" value="YAG2969CT-ND" constant="no"/>
@@ -6800,6 +6817,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402FR-07470RL" constant="no"/>
 <attribute name="VALUE_PART" value="470" constant="no"/>
+</technology>
+<technology name="5.6K">
+<attribute name="DIGIKEY" value="311-5.6KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-075K6L" constant="no"/>
+<attribute name="VALUE_PART" value="5.6k" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -7138,6 +7161,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Stackpole" constant="no"/>
 <attribute name="MPN" value="RMCF0603FT62K0" constant="no"/>
 <attribute name="VALUE_PART" value="62k" constant="no"/>
+</technology>
+<technology name="750">
+<attribute name="DIGIKEY" value="311-750HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07750RL" constant="no"/>
+<attribute name="VALUE_PART" value="750" constant="no"/>
 </technology>
 <technology name="750K">
 <attribute name="DIGIKEY" value="311-750KHRCT-ND" constant="no"/>
@@ -8116,12 +8145,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R1" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
 <part name="R2" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
-<part name="R3" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
-<part name="R4" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
-<part name="R5" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
-<part name="C2" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="4.7UF" value="4.7uF"/>
-<part name="C3" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="4.7UF" value="4.7uF"/>
-<part name="C4" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="4.7UF" value="4.7uF"/>
+<part name="R3" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
+<part name="R4" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
+<part name="R5" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
+<part name="C2" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="0.1UF" value="0.1uF"/>
+<part name="C3" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="0.1UF" value="0.1uF"/>
+<part name="C4" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="0.1UF" value="0.1uF"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8150,21 +8179,21 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U16" library="bschulz" deviceset="MAX906*" device="" technology="4"/>
 <part name="U17" library="bschulz" deviceset="MAX906*" device="" technology="4"/>
-<part name="R16" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
+<part name="R16" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U18" library="bschulz" deviceset="SN74AUP1T87" device=""/>
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U19" library="bschulz" deviceset="MAX906*" device="" technology="4"/>
 <part name="U20" library="bschulz" deviceset="MAX906*" device="" technology="4"/>
-<part name="R17" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
+<part name="R17" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
 <part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U21" library="bschulz" deviceset="SN74AUP1T87" device=""/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U22" library="bschulz" deviceset="MAX906*" device="" technology="4"/>
 <part name="U23" library="bschulz" deviceset="MAX906*" device="" technology="4"/>
-<part name="R18" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
+<part name="R18" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U24" library="bschulz" deviceset="SN74AUP1T87" device=""/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8188,17 +8217,32 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND58" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C16" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="GND59" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U3" library="bschulz" deviceset="TPS2294*" device="" technology="4"/>
+<part name="U3" library="bschulz" deviceset="TPS2294*" device="" technology="4">
+<attribute name="DIGIKEY" value="2156-FPF2006-ND"/>
+<attribute name="DISP" value="FPF2006"/>
+<attribute name="MF" value="Fairchild"/>
+<attribute name="MPN" value="FPF2006"/>
+</part>
 <part name="C12" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C13" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
-<part name="U4" library="bschulz" deviceset="TPS2294*" device="" technology="4"/>
+<part name="U4" library="bschulz" deviceset="TPS2294*" device="" technology="4">
+<attribute name="DIGIKEY" value="2156-FPF2006-ND"/>
+<attribute name="DISP" value="FPF2006"/>
+<attribute name="MF" value="Fairchild"/>
+<attribute name="MPN" value="FPF2006"/>
+</part>
 <part name="C17" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C18" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
-<part name="U5" library="bschulz" deviceset="TPS2294*" device="" technology="4"/>
+<part name="U5" library="bschulz" deviceset="TPS2294*" device="" technology="4">
+<attribute name="DIGIKEY" value="2156-FPF2006-ND"/>
+<attribute name="DISP" value="FPF2006"/>
+<attribute name="MF" value="Fairchild"/>
+<attribute name="MPN" value="FPF2006"/>
+</part>
 <part name="C19" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8229,23 +8273,31 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="C7" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="C8" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R10" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="68k"/>
+<part name="R10" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="L2" library="bschulz" deviceset="INDUCTOR" device="_MAPI_2.5X2" value="4.7uH"/>
+<part name="L2" library="bschulz" deviceset="INDUCTOR" device="_MAPI_2.5X2" value="4.7uH">
+<attribute name="DIGIKEY" value="732-4848-1-ND"/>
+<attribute name="MF" value="Wurth"/>
+<attribute name="MPN" value="74438323047"/>
+</part>
 <part name="R11" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="100K" value="100k"/>
 <part name="R12" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="750K" value="750k"/>
 <part name="GND54" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C21" library="bschulz_passives" deviceset="C-EU" device="C0402"/>
+<part name="C21" library="bschulz_passives" deviceset="C-EU" device="C0402">
+<attribute name="DIGIKEY" value="DNP"/>
+<attribute name="MF" value="N/A"/>
+<attribute name="MPN" value="DNP"/>
+</part>
 <part name="C22" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="22UF" value="22uF"/>
 <part name="C23" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="22UF" value="22uF"/>
 <part name="GND55" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C9" library="bschulz_passives" deviceset="C-EU" device="C0402"/>
-<part name="C10" library="bschulz_passives" deviceset="C-EU" device="C0402"/>
-<part name="C11" library="bschulz_passives" deviceset="C-EU" device="C0402"/>
-<part name="R13" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K"/>
-<part name="R23" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K"/>
-<part name="R24" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K"/>
+<part name="C9" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="47NF" value="47nF"/>
+<part name="C10" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="47NF" value="47nF"/>
+<part name="C11" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="47NF" value="47nF"/>
+<part name="R13" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
+<part name="R23" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
+<part name="R24" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
 <part name="GND46" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8536,6 +8588,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="L2" gate="G$1" x="121.92" y="246.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="127" y="245.11" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="127" y="250.19" size="1.778" layer="96" rot="R180"/>
+<attribute name="DIGIKEY" x="121.92" y="246.38" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MF" x="121.92" y="246.38" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="121.92" y="246.38" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R11" gate="G$1" x="147.32" y="218.44" smashed="yes" rot="R90">
 <attribute name="NAME" x="145.8214" y="214.63" size="1.778" layer="95" rot="R90"/>
