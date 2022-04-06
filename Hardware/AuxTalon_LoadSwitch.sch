@@ -2261,8 +2261,8 @@ Digikey:
 </device>
 </devices>
 </deviceset>
-<deviceset name="24AA02" prefix="U">
-<description>&lt;b&gt;24AA02&lt;/b&gt; - 2k I&lt;sup&gt;2&lt;/sup&gt;C Serial EEPROM
+<deviceset name="AT24MAC*02" prefix="U">
+<description>&lt;b&gt;AT24MACx02&lt;/b&gt; - 2kb  I&lt;sup&gt;2&lt;/sup&gt;C Serial EEPROM with EUI serial number
 
 &lt;p&gt;&lt;b&gt;Characteristics:&lt;/b&gt;
 &lt;ul&gt;
@@ -2276,7 +2276,7 @@ Digikey:
 
 &lt;p&gt;
 &lt;b&gt;Digikey:&lt;/b&gt;
-&lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/microchip-technology/24AA025E64T-I-OT/3908633"&gt; 24AA025E64T-I/OTCT-ND (SOT-23)&lt;/a&gt;</description>
+&lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/microchip-technology/AT24MAC602-STUM-T/3973073?s=N4IgTCBcDaIIIBUwBYCycDCA2ADGAtAMoICqq%2BCIAugL5A"&gt; AT24MAC602-STUM-T (SOT-23, EUI-64)&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="EEPROM_WP" x="0" y="0"/>
 </gates>
@@ -2291,11 +2291,22 @@ Digikey:
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="24AA025E64T-I/OTCT-ND" constant="no"/>
-<attribute name="DISP" value="24AA025E64" constant="no"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="AT24MAC*02" constant="no"/>
 <attribute name="MF" value="Microchip" constant="no"/>
-<attribute name="MOUSER" value="24AA025E64T-I/OTCT-ND" constant="no"/>
-<attribute name="MPN" value="24AA025E64T-I/OT" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="4">
+<attribute name="DIGIKEY" value="AT24MAC402-STUM-TCT-ND" constant="no"/>
+<attribute name="DISP" value="AT24MAC402" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="AT24MAC402-STUM-T" constant="no"/>
+</technology>
+<technology name="6">
+<attribute name="DIGIKEY" value="AT24MAC602-STUM-TCT-ND" constant="no"/>
+<attribute name="DISP" value="AT24MAC602" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="AT24MAC602-STUM-T" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6824,6 +6835,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="RC0402FR-075K6L" constant="no"/>
 <attribute name="VALUE_PART" value="5.6k" constant="no"/>
 </technology>
+<technology name="510">
+<attribute name="DIGIKEY" value="311-510LRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07510RL" constant="no"/>
+<attribute name="VALUE_PART" value="510" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="R0603" package="R0603">
@@ -7077,6 +7094,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07360KL" constant="no"/>
 <attribute name="VALUE_PART" value="360k" constant="no"/>
+</technology>
+<technology name="390K">
+<attribute name="DIGIKEY" value="311-390KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07390KL" constant="no"/>
+<attribute name="VALUE_PART" value="390k" constant="no"/>
 </technology>
 <technology name="4.7K">
 <attribute name="DIGIKEY" value="311-4.70KHRCT-ND" constant="no"/>
@@ -8259,7 +8282,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U6" library="bschulz" deviceset="24AA02" device="SOT23"/>
+<part name="U6" library="bschulz" deviceset="AT24MAC*02" device="SOT23" technology="6" value="AT24MAC602SOT23"/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U7" library="bschulz" deviceset="74HC4852" device=""/>
 <part name="GND50" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8273,7 +8296,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="C7" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="C8" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R10" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
+<part name="R10" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="100K" value="100k"/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L2" library="bschulz" deviceset="INDUCTOR" device="_MAPI_2.5X2" value="4.7uH">
