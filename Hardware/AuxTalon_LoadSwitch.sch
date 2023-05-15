@@ -1426,19 +1426,6 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 </symbol>
-<symbol name="MIC2090">
-<pin name="VIN" x="-12.7" y="5.08" visible="pin" length="middle" direction="pwr"/>
-<pin name="EN" x="-12.7" y="0" length="middle" direction="in"/>
-<pin name="!FAULT" x="-12.7" y="-7.62" length="middle" direction="out"/>
-<pin name="GND" x="15.24" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
-<pin name="VOUT" x="15.24" y="5.08" visible="pin" length="middle" direction="pwr" rot="R180"/>
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="1.27" y="8.89" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
-<text x="1.524" y="-11.43" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
-</symbol>
 <symbol name="D_ESD_BI">
 <wire x1="-3.81" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94"/>
@@ -1696,6 +1683,19 @@ Switches electronic signals</description>
 </polygon>
 <text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
 <text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MIC2090">
+<pin name="VIN" x="-12.7" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="EN" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="!FAULT" x="-12.7" y="-7.62" length="middle" direction="out"/>
+<pin name="GND" x="15.24" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="VOUT" x="15.24" y="5.08" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="1.27" y="8.89" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
+<text x="1.524" y="-11.43" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2271,53 +2271,6 @@ Digikey:
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS2294*" prefix="U">
-<description>&lt;b&gt;TPS2294x&lt;/b&gt; - Low Input Voltage Current Limited Load Switch with Shut off and Auto Restart 
-
-&lt;p&gt;Characteristics:
-&lt;ul&gt;
-&lt;li&gt;Vin: 1.62V ~ 5.5V&lt;/li&gt;
-&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: &amp;lt;1&amp;mu;A (OFF), 40&amp;mu;A (ON) &lt;/li&gt;
-&lt;li&gt;R&lt;sub&gt;DS(ON)&lt;/sub&gt;: 400m&amp;Omega; (Vin = 5v), 500m&amp;Omega; (Vin = 3.3v)&lt;/li&gt;
-&lt;li&gt; Output Current: 100mA&lt;/li&gt;
-&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
- 
-&lt;p&gt;Digikey: &lt;br&gt;
-&lt;ul&gt;
-&lt;a href = "https://www.digikey.com/en/products/detail/texas-instruments/TPS22944DCKR/2172678"&gt; 296-25218-1-ND (TPS22944) &lt;/a&gt;&lt;br/&gt;
-
-&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="MIC2090" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DCK_R-PDSO-G5">
-<connects>
-<connect gate="G$1" pin="!FAULT" pad="3"/>
-<connect gate="G$1" pin="EN" pad="4"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VIN" pad="5"/>
-<connect gate="G$1" pin="VOUT" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="" constant="no"/>
-<attribute name="DISP" value="TPS2294x" constant="no"/>
-<attribute name="MF" value="TI" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-</technology>
-<technology name="4">
-<attribute name="DIGIKEY" value="296-25218-1-ND" constant="no"/>
-<attribute name="DISP" value="TPS22944" constant="no"/>
-<attribute name="MF" value="TI" constant="no"/>
-<attribute name="MPN" value="TPS22944DCKR" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="DIODE_ESD_BI" prefix="D">
 <description>&lt;h3&gt;Generic Bidirectional ESD Diode&lt;/h3&gt;</description>
 <gates>
@@ -2876,6 +2829,68 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <attribute name="MF" value="Diodes Inc" constant="no"/>
 <attribute name="MPN" value="ZXMN3B14FTA" constant="no"/>
 <attribute name="VALUE" value="ZXMN3B14" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC209*" prefix="U">
+<description>&lt;b&gt;MIC209x&lt;/b&gt; - Hight Side Load Switch, with Fixed Current Limit 
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 1.8v ~ 5.5v&lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: 5&amp;mu;A (OFF), 70&amp;mu;A (ON) &lt;/li&gt;
+&lt;li&gt;R&lt;sub&gt;DS(ON)&lt;/sub&gt;: 700m&amp;Omega; (Vin = 5v), 790m&amp;Omega; (Vin = 3.3v)&lt;/li&gt;
+&lt;li&gt;UVLO: 1.75V&lt;/li&gt;
+&lt;li&gt; Output Current: 50/100mA (MIC2090/MIC2091) &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/MIC2091-1YM5-TR/576-3891-1-ND/2650466"&gt; MIC2091-1 &lt;/a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/MIC2090-1YM5-TR/576-3890-1-ND/2650465"&gt; MIC2090-1 &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/microchip-technology/MIC2090-2YM5-TR/2764084?s=N4IgTCBcDaILYEsDGYAMBOVBaCBdAvkA"&gt; MIC2090-2 &lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MIC2090" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="!FAULT" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="0">
+<attribute name="DIGIKEY" value="576-3890-1-ND" constant="no"/>
+<attribute name="DISP" value="MIC2090" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MIC2090-1YM5-TR" constant="no"/>
+</technology>
+<technology name="0-2">
+<attribute name="DIGIKEY" value="576-3964-1-ND" constant="no"/>
+<attribute name="DISP" value="MIC2090-2" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MIC2090-2YM5-TR" constant="no"/>
+</technology>
+<technology name="1">
+<attribute name="DIGIKEY" value="576-3891-1-ND" constant="no"/>
+<attribute name="DISP" value="MIC2091" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MIC2091-1YM5-TR" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -7205,6 +7220,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="RC0402FR-07470RL" constant="no"/>
 <attribute name="VALUE_PART" value="470" constant="no"/>
 </technology>
+<technology name="5.1K">
+<attribute name="DIGIKEY" value="311-5.10KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-075K1L" constant="no"/>
+<attribute name="VALUE_PART" value="5.1k" constant="no"/>
+</technology>
 <technology name="5.6K">
 <attribute name="DIGIKEY" value="311-5.6KLRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -8601,36 +8622,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND58" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C16" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="GND59" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U3" library="bschulz" deviceset="TPS2294*" device="" technology="4">
-<attribute name="DIGIKEY" value="2156-FPF2006-ND"/>
-<attribute name="DISP" value="FPF2006"/>
-<attribute name="MF" value="Fairchild"/>
-<attribute name="MPN" value="FPF2006"/>
-</part>
 <part name="C12" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C13" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
-<part name="U4" library="bschulz" deviceset="TPS2294*" device="" technology="4">
-<attribute name="DIGIKEY" value="2156-FPF2006-ND"/>
-<attribute name="DISP" value="FPF2006"/>
-<attribute name="MF" value="Fairchild"/>
-<attribute name="MPN" value="FPF2006"/>
-</part>
+<part name="C13" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
 <part name="C17" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C18" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
-<part name="U5" library="bschulz" deviceset="TPS2294*" device="" technology="4">
-<attribute name="DIGIKEY" value="2156-FPF2006-ND"/>
-<attribute name="DISP" value="FPF2006"/>
-<attribute name="MF" value="Fairchild"/>
-<attribute name="MPN" value="FPF2006"/>
-</part>
+<part name="C18" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
 <part name="C19" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C20" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
+<part name="C20" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
 <part name="D1" library="bschulz" deviceset="DIODE_ESD_BI" device="_0402" technology="_D5V0L1" value="6V"/>
 <part name="D2" library="bschulz" deviceset="DIODE_ESD_BI" device="_0402" technology="_D5V0L1" value="6V"/>
 <part name="D3" library="bschulz" deviceset="DIODE_ESD_BI" device="_0402" technology="_D5V0L1" value="6V"/>
@@ -8708,6 +8711,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R28" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
 <part name="R29" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="100K" value="100k"/>
+<part name="U3" library="bschulz" deviceset="MIC209*" device="" technology="0-2"/>
+<part name="U4" library="bschulz" deviceset="MIC209*" device="" technology="0-2"/>
+<part name="U5" library="bschulz" deviceset="MIC209*" device="" technology="0-2"/>
 </parts>
 <sheets>
 <sheet>
@@ -8834,10 +8840,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="S3" gate="G$1" x="208.28" y="20.32" smashed="yes" rot="R180">
 <attribute name="NAME" x="209.55" y="17.018" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 </instance>
-<instance part="U3" gate="G$1" x="271.78" y="73.66" smashed="yes">
-<attribute name="DISP" x="273.05" y="82.55" size="1.778" layer="95" ratio="15" align="center"/>
-<attribute name="NAME" x="273.304" y="62.23" size="1.778" layer="95" ratio="15" align="center"/>
-</instance>
 <instance part="C12" gate="G$1" x="241.3" y="76.2" smashed="yes">
 <attribute name="NAME" x="242.824" y="76.581" size="1.778" layer="95"/>
 <attribute name="VALUE" x="242.824" y="71.501" size="1.778" layer="96"/>
@@ -8852,10 +8854,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="296.164" y="74.041" size="1.778" layer="95"/>
 <attribute name="VALUE" x="296.164" y="68.961" size="1.778" layer="96"/>
 </instance>
-<instance part="U4" gate="G$1" x="271.78" y="48.26" smashed="yes">
-<attribute name="DISP" x="273.05" y="57.15" size="1.778" layer="95" ratio="15" align="center"/>
-<attribute name="NAME" x="273.304" y="36.83" size="1.778" layer="95" ratio="15" align="center"/>
-</instance>
 <instance part="C17" gate="G$1" x="241.3" y="50.8" smashed="yes">
 <attribute name="NAME" x="242.824" y="51.181" size="1.778" layer="95"/>
 <attribute name="VALUE" x="242.824" y="46.101" size="1.778" layer="96"/>
@@ -8869,10 +8867,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="C18" gate="G$1" x="294.64" y="48.26" smashed="yes">
 <attribute name="NAME" x="296.164" y="48.641" size="1.778" layer="95"/>
 <attribute name="VALUE" x="296.164" y="43.561" size="1.778" layer="96"/>
-</instance>
-<instance part="U5" gate="G$1" x="271.78" y="22.86" smashed="yes">
-<attribute name="DISP" x="273.05" y="31.75" size="1.778" layer="95" ratio="15" align="center"/>
-<attribute name="NAME" x="273.304" y="11.43" size="1.778" layer="95" ratio="15" align="center"/>
 </instance>
 <instance part="C19" gate="G$1" x="241.3" y="25.4" smashed="yes">
 <attribute name="NAME" x="242.824" y="25.781" size="1.778" layer="95"/>
@@ -9091,6 +9085,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="GND44" gate="1" x="142.24" y="154.94" smashed="yes">
 <attribute name="VALUE" x="139.7" y="152.4" size="1.778" layer="96"/>
 </instance>
+<instance part="U3" gate="G$1" x="271.78" y="73.66" smashed="yes">
+<attribute name="DISP" x="273.05" y="82.55" size="1.778" layer="95" ratio="15" align="center"/>
+<attribute name="NAME" x="273.304" y="62.23" size="1.778" layer="95" ratio="15" align="center"/>
+</instance>
+<instance part="U4" gate="G$1" x="271.78" y="48.26" smashed="yes">
+<attribute name="DISP" x="273.05" y="57.15" size="1.778" layer="95" ratio="15" align="center"/>
+<attribute name="NAME" x="273.304" y="36.83" size="1.778" layer="95" ratio="15" align="center"/>
+</instance>
+<instance part="U5" gate="G$1" x="271.78" y="22.86" smashed="yes">
+<attribute name="DISP" x="273.05" y="31.75" size="1.778" layer="95" ratio="15" align="center"/>
+<attribute name="NAME" x="273.304" y="11.43" size="1.778" layer="95" ratio="15" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9164,7 +9170,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="241.3" y1="68.58" x2="241.3" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="GND"/>
 <wire x1="287.02" y1="66.04" x2="289.56" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="289.56" y1="66.04" x2="289.56" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -9172,6 +9177,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="289.56" y="66.04"/>
 <pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="66.04" x2="294.64" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
@@ -9179,7 +9185,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="241.3" y1="43.18" x2="241.3" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="GND"/>
 <wire x1="287.02" y1="40.64" x2="289.56" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="289.56" y1="40.64" x2="289.56" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
@@ -9187,6 +9192,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="289.56" y="40.64"/>
 <pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="40.64" x2="294.64" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
@@ -9194,7 +9200,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="241.3" y1="17.78" x2="241.3" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="GND"/>
 <wire x1="287.02" y1="15.24" x2="289.56" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="289.56" y1="15.24" x2="289.56" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
@@ -9202,6 +9207,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="289.56" y="15.24"/>
 <pinref part="C20" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="15.24" x2="294.64" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND22" gate="1" pin="GND"/>
@@ -9791,13 +9797,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="33.02" y="27.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="VOUT"/>
 <wire x1="287.02" y1="78.74" x2="294.64" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="78.74" x2="297.18" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="76.2" x2="294.64" y2="78.74" width="0.1524" layer="91"/>
 <junction x="294.64" y="78.74"/>
 <label x="297.18" y="78.74" size="0.8128" layer="95" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="VOUT"/>
 </segment>
 <segment>
 <pinref part="U7" gate="G$1" pin="2Y0"/>
@@ -9812,13 +9818,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="33.02" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="VOUT"/>
 <wire x1="287.02" y1="53.34" x2="294.64" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="53.34" x2="297.18" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="50.8" x2="294.64" y2="53.34" width="0.1524" layer="91"/>
 <junction x="294.64" y="53.34"/>
 <label x="297.18" y="53.34" size="0.8128" layer="95" xref="yes"/>
+<pinref part="U4" gate="G$1" pin="VOUT"/>
 </segment>
 <segment>
 <pinref part="U7" gate="G$1" pin="2Y1"/>
@@ -9833,13 +9839,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="33.02" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="VOUT"/>
 <wire x1="287.02" y1="27.94" x2="294.64" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="C20" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="27.94" x2="297.18" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="25.4" x2="294.64" y2="27.94" width="0.1524" layer="91"/>
 <junction x="294.64" y="27.94"/>
 <label x="297.18" y="27.94" size="0.8128" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="VOUT"/>
 </segment>
 <segment>
 <pinref part="U7" gate="G$1" pin="2Y2"/>
@@ -9861,12 +9867,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="215.9" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="VIN"/>
 <wire x1="259.08" y1="78.74" x2="241.3" y2="78.74" width="0.1524" layer="91"/>
 <label x="238.76" y="78.74" size="0.8128" layer="95" rot="R180" xref="yes"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="78.74" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
 <junction x="241.3" y="78.74"/>
+<pinref part="U3" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
 <pinref part="U7" gate="G$1" pin="1Y0"/>
@@ -9881,12 +9887,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="215.9" y="35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="VIN"/>
 <wire x1="259.08" y1="53.34" x2="241.3" y2="53.34" width="0.1524" layer="91"/>
 <label x="238.76" y="53.34" size="0.8128" layer="95" rot="R180" xref="yes"/>
 <pinref part="C17" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="53.34" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
 <junction x="241.3" y="53.34"/>
+<pinref part="U4" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
 <pinref part="U7" gate="G$1" pin="1Y1"/>
@@ -9901,12 +9907,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="215.9" y="20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="VIN"/>
 <wire x1="259.08" y1="27.94" x2="241.3" y2="27.94" width="0.1524" layer="91"/>
 <label x="238.76" y="27.94" size="0.8128" layer="95" rot="R180" xref="yes"/>
 <pinref part="C19" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="27.94" x2="238.76" y2="27.94" width="0.1524" layer="91"/>
 <junction x="241.3" y="27.94"/>
+<pinref part="U5" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
 <pinref part="U7" gate="G$1" pin="1Y2"/>
@@ -9916,44 +9922,44 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="PORT1_EN" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="EN"/>
 <wire x1="259.08" y1="73.66" x2="256.54" y2="73.66" width="0.1524" layer="91"/>
 <label x="256.54" y="73.66" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="EN"/>
 </segment>
 </net>
 <net name="!PORT1_FAULT" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="!FAULT"/>
 <wire x1="259.08" y1="66.04" x2="256.54" y2="66.04" width="0.1524" layer="91"/>
 <label x="256.54" y="66.04" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="!FAULT"/>
 </segment>
 </net>
 <net name="PORT2_EN" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="EN"/>
 <wire x1="259.08" y1="48.26" x2="256.54" y2="48.26" width="0.1524" layer="91"/>
 <label x="256.54" y="48.26" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="U4" gate="G$1" pin="EN"/>
 </segment>
 </net>
 <net name="!PORT2_FAULT" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="!FAULT"/>
 <wire x1="259.08" y1="40.64" x2="256.54" y2="40.64" width="0.1524" layer="91"/>
 <label x="256.54" y="40.64" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="U4" gate="G$1" pin="!FAULT"/>
 </segment>
 </net>
 <net name="PORT3_EN" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="EN"/>
 <wire x1="259.08" y1="22.86" x2="256.54" y2="22.86" width="0.1524" layer="91"/>
 <label x="256.54" y="22.86" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="EN"/>
 </segment>
 </net>
 <net name="!PORT3_FAULT" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="!FAULT"/>
 <wire x1="259.08" y1="15.24" x2="256.54" y2="15.24" width="0.1524" layer="91"/>
 <label x="256.54" y="15.24" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="!FAULT"/>
 </segment>
 </net>
 <net name="MUX_EN" class="0">
