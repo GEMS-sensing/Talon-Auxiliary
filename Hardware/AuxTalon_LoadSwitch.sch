@@ -8625,15 +8625,15 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="C12" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C13" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
+<part name="C13" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="10UF" value="10uF"/>
 <part name="C17" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C18" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
+<part name="C18" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="10UF" value="10uF"/>
 <part name="C19" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C20" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
+<part name="C20" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="10UF" value="10uF"/>
 <part name="D1" library="bschulz" deviceset="DIODE_ESD_BI" device="_0402" technology="_D5V0L1" value="6V"/>
 <part name="D2" library="bschulz" deviceset="DIODE_ESD_BI" device="_0402" technology="_D5V0L1" value="6V"/>
 <part name="D3" library="bschulz" deviceset="DIODE_ESD_BI" device="_0402" technology="_D5V0L1" value="6V"/>
