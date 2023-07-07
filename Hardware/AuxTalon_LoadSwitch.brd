@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -46,10 +46,10 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -1088,10 +1088,10 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="15.716" y="23.241" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="14.351" y="21.114" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C13" library="bschulz_passives" package="C0603" value="1uF" x="12.16" y="19.812" smashed="yes">
-<attribute name="DIGIKEY" value="587-2984-1-ND" x="12.16" y="19.812" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Yaiyo Yuden" x="12.16" y="19.812" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="TMK107B7105KA-T" x="12.16" y="19.812" size="1.778" layer="27" display="off"/>
+<element name="C13" library="bschulz_passives" package="C0603" value="10uF" x="12.16" y="19.812" smashed="yes">
+<attribute name="DIGIKEY" value="490-10728-1-ND" x="12.16" y="19.812" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Murata" x="12.16" y="19.812" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM188R61C106KAALD" x="12.16" y="19.812" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="14.097" y="19.78" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="12.16" y="18.796" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 </element>
@@ -1102,10 +1102,10 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="40.132" y="24.892" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="38.735" y="22.86" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C18" library="bschulz_passives" package="C0603" value="1uF" x="33.655" y="22.86" smashed="yes" rot="R270">
-<attribute name="DIGIKEY" value="587-2984-1-ND" x="33.655" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="Yaiyo Yuden" x="33.655" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="TMK107B7105KA-T" x="33.655" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C18" library="bschulz_passives" package="C0603" value="10uF" x="33.655" y="22.86" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="490-10728-1-ND" x="33.655" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Murata" x="33.655" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="GRM188R61C106KAALD" x="33.655" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="33.655" y="24.638" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="32.639" y="22.86" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
@@ -1116,10 +1116,10 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="63.087" y="22.606" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="61.722" y="20.606" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C20" library="bschulz_passives" package="C0603" value="1uF" x="57.15" y="20.86" smashed="yes" rot="R270">
-<attribute name="DIGIKEY" value="587-2984-1-ND" x="57.15" y="19.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="Yaiyo Yuden" x="57.15" y="19.59" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="TMK107B7105KA-T" x="57.15" y="19.59" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C20" library="bschulz_passives" package="C0603" value="10uF" x="57.15" y="20.86" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="490-10728-1-ND" x="57.15" y="19.59" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Murata" x="57.15" y="19.59" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="GRM188R61C106KAALD" x="57.15" y="19.59" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="57.245" y="22.606" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="56.134" y="20.86" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
