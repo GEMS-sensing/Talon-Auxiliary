@@ -60,6 +60,54 @@ Scripts and results from the testing process and development process. Contains m
 * EEPROM with UUID built in - can store additional values defined by firmware to track offsets, etc
 * ESD protected inputs
 
+### Interface - Sensor
+* I<sup>2</sup>C data interface
+* M12 circular connector 
+
+![Pinout](Documents/Images/Pinout.png)
+
+<!-- <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="Documents/Images/Pinout_LIGHT.png">
+  <img alt="Hedorah Connector Pinout" src="Documents/Images/Pinout.png">
+</picture> -->
+
+| **Pin** | **Connection** | **Description** |
+|---------|----------------| --------------- |
+| 1     | Power (3.3V  **OR** 5V) | Output power to sensors, limited to 50mA continuous current, voltage level is selected by DIP switch next to each port |
+| 2     | Open Drain            | Input for switch based sensors - 10k&Omega; pullup to Power rail|
+| 3     | Ground            | Power and data ground for system |
+| 4      | Analog            | Analog voltage input |
+| 5      | Digital | Digital pulse input |
+
+
+#### Sensor Wiring
+
+- Switch based sensors
+	- e.g. reed switch, hall effect, etc
+	- Devices where the sensor open or closes a switch depending on state
+	- Wire switch between Ground and Open Drain lines
+	- WARNING: The Talon will apply rail power to the switch line via a pullup resistor - ensure the sensor is rated for the rail voltage being used (3.3V or 5V)
+	- NOTE: To limit power consumption, only recommended for Nominally Open (NO) switches
+- Pulse based sensors
+	- e.g. microcontroller pulse outputs, basic digital sensors, etc
+	- Devices where the output is either 0V or a logic voltage based based on a sensor state
+	- Wire grounds together and wire the pulse output to the Digital pin, wire Power to sensor if needed
+	- NOTE: The digital input is 5V tolerant regardless of the voltage on the power bus
+- Analog based sensors
+	- e.g. Potentiometers, basic sensors with variable voltage output, etc
+	- Devices where the output is a voltage which varies with sensed value
+	- Wire grounds together and wire the analog output of the sensor to the Analog pin, wire Power to sensor if needed
+	- NOTE: The analog input is rated up to 5V regardless of the voltage on the power bus
+
+#### Bus Selection
+The power provided by each Aux Talon port can be selected as either 3.3V (default) or 5V - depending on the demands of the sensor.
+
+This setting is changed by flipping the DIP switches (`S1`, `S2`, `S3`) on the Aux Talon itself, the position for a given voltage is noted next to each switch. Each switch controls the Aux Talon port it is adjacent to and each port can be switched independently of the others.
+
+> [!WARNING]
+> Application of voltage beyond the sensor specifications may result in irreparable damage to the sensor!
+
+
 <!-- ### Interface
 * I<sup>2</sup>C
 * M12 circular connector  -->
